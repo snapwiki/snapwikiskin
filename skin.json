@@ -7,7 +7,7 @@
 		"MediaWiki": ">= 1.35.0"
 	},
     "ValidSkinNames": {
-		"snapwikiskin": "Snap! Wiki Skin"
+		"snapwikiskin": "SnapWikiSkin"
 	},
 	"MessagesDirs": {
 		"SnapWikiSkin": [
@@ -17,6 +17,7 @@
     "manifest_version": 2,
     "ResourceModules": {
         "skin.snapwikiskin" : {
+            "class": "SkinSnapWikSkin",
             "templates": [
                 "templates/skin.mustache"
             ]
