@@ -1,0 +1,25 @@
+{
+    "name": "Snap! Wiki Skin",
+    "author": "R4356th",
+    "license-name": "GPL-3.0-or-later",
+	"type": "skin",
+    "requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+    "ValidSkinNames": {
+		"snapwikiskin": "Snap! Wiki Skin"
+	},
+	"MessagesDirs": {
+		"SnapWikiSkin": [
+			"i18n"
+		]
+	},
+    "manifest_version": 2,
+    "ResourceModules": {
+        "skin.snapwikiskin" : {
+            "templates": [
+                "templates/skin.mustache"
+            ]
+        }
+    }
+}
