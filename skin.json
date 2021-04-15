@@ -7,7 +7,26 @@
 		"MediaWiki": ">= 1.35.0"
 	},
     "ValidSkinNames": {
-		"snapwikiskin": "SnapWikiSkin"
+		"snapwikiskin": {
+            "class": "SkinMustache",
+            "args": [
+				{
+					"name": "snapwikiskin",
+					"templateDirectory": "skins/snapwikiskin-new/templates/",
+					"messages": [
+						"navigation-heading",
+						"comma-separator",
+						"jumpto",
+						"jumptonavigation",
+						"jumptosearch",
+						"personaltools",
+						"powersearch-legend",
+						"tagline",
+						"views"
+					]
+				}
+			]
+        }
 	},
 	"MessagesDirs": {
 		"SnapWikiSkin": [
