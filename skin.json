@@ -43,6 +43,6 @@
   },
   "ResourceFileModulePaths": {
     "localBasePath": "resources",
-    "remoteSkinPath": "snapwikiskin-new"
+    "remoteSkinPath": "snapwikiskin-new/resources"
   }
 }
