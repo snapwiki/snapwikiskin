@@ -42,12 +42,7 @@
     }
   },
   "ResourceFileModulePaths": {
-<<<<<<< HEAD
     "localBasePath": "resources",
     "remoteSkinPath": "snapwikiskin-new"
-=======
-    "localBasePath": "",
-    "remoteSkinPath": "snapwikiskin"
->>>>>>> 9413227ce1be881e6a7867171cbbd786cea68f07
   }
 }
