@@ -1,45 +1,48 @@
 {
-    "name": "Snap! Wiki Skin",
-    "author": "R4356th",
-    "license-name": "GPL-3.0-or-later",
-	"type": "skin",
-    "requires": {
-		"MediaWiki": ">= 1.35.0"
-	},
-    "ValidSkinNames": {
-		"snapwikiskin": {
-            "class": "SkinMustache",
-            "args": [
-				{
-					"name": "snapwikiskin",
-					"templateDirectory": "skins/snapwikiskin-new/templates/",
-					"messages": [
-						"navigation-heading",
-						"comma-separator",
-						"jumpto",
-						"jumptonavigation",
-						"jumptosearch",
-						"personaltools",
-						"powersearch-legend",
-						"tagline",
-						"views"
-					]
-				}
-			]
+  "name": "Snap! Wiki Skin",
+  "author": "R4356th",
+  "license-name": "GPL-3.0-or-later",
+  "type": "skin",
+  "requires": {
+    "MediaWiki": ">= 1.35.0"
+  },
+  "ValidSkinNames": {
+    "snapwikiskin": {
+      "class": "SkinMustache",
+      "args": [
+        {
+          "name": "snapwikiskin",
+          "templateDirectory": "skins/snapwikiskin-new/templates/",
+          "messages": [
+            "navigation-heading",
+            "comma-separator",
+            "jumpto",
+            "jumptonavigation",
+            "jumptosearch",
+            "personaltools",
+            "powersearch-legend",
+            "tagline",
+            "views"
+          ]
         }
-	},
-	"MessagesDirs": {
-		"SnapWikiSkin": [
-			"i18n"
-		]
-	},
-    "manifest_version": 2,
-    "ResourceModules": {
-        "skin.snapwikiskin" : {
-            "class": "SkinSnapWikSkin",
-            "templates": [
-                "templates/skin.mustache"
-            ]
-        }
+      ]
     }
+  },
+  "MessagesDirs": {
+    "SnapWikiSkin": ["i18n"]
+  },
+  "manifest_version": 2,
+  "ResourceModules": {
+    "skin.snapwikiskin": {
+      "class": "SkinSnapWikSkin",
+      "templates": ["templates/skin.mustache"],
+      "styles": {
+        "resources/screen.css": { "media": "screen" }
+      }
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteSkinPath": "SnapwikiSkin"
+  }
 }
