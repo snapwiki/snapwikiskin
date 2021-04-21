@@ -1,3 +1,18 @@
+{{#data-search-box}}
+			<div id="p-search" class="portlet" role="search">
+				<h3><label for="searchInput">{{msg-search}}</label></h3>
+
+				<div id="searchBody" class="pBody">
+					<form action="{{form-action}}" id="searchform">
+						<input type="hidden" name="title" value="{{page-title}}">
+						{{{html-input}}}
+						{{{html-button-search}}}
+						{{{html-button-search-fallback}}}
+					</form>
+				</div>
+			</div>
+{{/data-search-box}}
+
 <!-- heading -->
 <div id="mw_header">
 	<div class="mw-indicators mw-body-content">
@@ -56,22 +71,6 @@
 		<!-- portlets -->
 		{{#data-portlets-sidebar}}
 			{{#data-portlets-first}}{{>Portlet}}{{/data-portlets-first}}
-		{{/data-portlets-sidebar}}
-		{{#data-search-box}}
-			<div id="p-search" class="portlet" role="search">
-				<h3><label for="searchInput">{{msg-search}}</label></h3>
-
-				<div id="searchBody" class="pBody">
-					<form action="{{form-action}}" id="searchform">
-						<input type="hidden" name="title" value="{{page-title}}">
-						{{{html-input}}}
-						{{{html-button-search}}}
-						{{{html-button-search-fallback}}}
-					</form>
-				</div>
-			</div>
-		{{/data-search-box}}
-		{{#data-portlets-sidebar}}
 			{{#array-portlets-rest}}
 				{{>Portlet}}
 			{{/array-portlets-rest}}
