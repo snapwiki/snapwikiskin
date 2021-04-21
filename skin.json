@@ -1,63 +1,57 @@
 {
-	"name": "Snap! Wiki Skin",
-	"author": [
-		"R4356th",
-		"GrahamSH"
-	],
-	"license-name": "GPL-2.0-or-later",
-	"type": "skin",
-	"requires": {
-		"MediaWiki": ">= 1.35.0"
-	},
-	"ValidSkinNames": {
-		"snapwikiskin": {
-			"class": "SkinMustache",
-			"args": [
-				{
-					"name": "snapwikiskin",
-					"templateDirectory": "skins/snapwikiskin-new/templates/",
-					"scripts": [],
-					"styles": [ "skins.snapwikiskin" ],
-					"messages": [
-						"navigation-heading",
-						"comma-separator",
-						"jumpto",
-						"jumptonavigation",
-						"jumptosearch",
-						"personaltools",
-						"powersearch-legend",
-						"tagline",
-						"views"
-					]
-				}
-			]
-		}
-	},
-	"MessagesDirs": {
-		"snapwikiskin-new": [
-			"i18n"
-		]
-	},
-	"ResourceModules": {
-		"skins.snapwikiskin": {
-			"class": "ResourceLoaderSkinModule",
-			"features": {
-				"legacy": true
-			},
-			"styles": {
-				"resources/screen.css": {
-					"media": "screen"
-				},
-			}
-		}
-	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteSkinPath": "snapwikiskin-new"
-	},
-	"ResourceModuleSkinStyles": {
-		"snapwikiskin": {
-		}
-	},
-	"manifest_version": 2
+  "name": "Snap! Wiki Skin",
+  "author": ["R4356th", "GrahamSH"],
+  "license-name": "GPL-2.0-or-later",
+  "type": "skin",
+  "requires": {
+    "MediaWiki": ">= 1.35.0"
+  },
+  "ValidSkinNames": {
+    "snapwikiskin": {
+      "class": "SkinMustache",
+      "args": [
+        {
+          "name": "snapwikiskin",
+          "templateDirectory": "skins/snapwikiskin-new/templates/",
+          "scripts": [],
+          "styles": ["skins.snapwikiskin"],
+          "messages": [
+            "navigation-heading",
+            "comma-separator",
+            "jumpto",
+            "jumptonavigation",
+            "jumptosearch",
+            "personaltools",
+            "powersearch-legend",
+            "tagline",
+            "views"
+          ]
+        }
+      ]
+    }
+  },
+  "MessagesDirs": {
+    "snapwikiskin-new": ["i18n"]
+  },
+  "ResourceModules": {
+    "skins.snapwikiskin": {
+      "class": "ResourceLoaderSkinModule",
+      "features": {
+        "legacy": true
+      },
+      "styles": {
+        "resources/screen.css": {
+          "media": "screen"
+        }
+      }
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteSkinPath": "snapwikiskin-new"
+  },
+  "ResourceModuleSkinStyles": {
+    "snapwikiskin": {}
+  },
+  "manifest_version": 2
 }
