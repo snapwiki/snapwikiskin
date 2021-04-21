@@ -14,7 +14,7 @@
           "name": "snapwikiskin",
           "responsive": true,
           "templateDirectory": "skins/snapwikiskin-new/templates/",
-          "styles": [ "skins.snapwikiskin" ],
+          "styles": ["skins.snapwikiskin"],
           "messages": [
             "navigation-heading",
             "comma-separator",
