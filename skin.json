@@ -12,7 +12,9 @@
       "args": [
         {
           "name": "snapwikiskin",
+          "responsive": true,
           "templateDirectory": "skins/snapwikiskin-new/templates/",
+          "styles": [ "skins.snapwikiskin" ],
           "messages": [
             "navigation-heading",
             "comma-separator",
@@ -29,20 +31,22 @@
     }
   },
   "MessagesDirs": {
-    "SnapWikiSkin": ["i18n"]
+    "snapwikiskin-new": ["i18n"]
   },
   "manifest_version": 2,
   "ResourceModules": {
-    "skin.snapwikiskin": {
-      "class": "SkinSnapWikSkin",
-      "templates": ["templates/skin.mustache"],
+    "skins.snapwikiskin": {
+      "class": "ResourceLoaderSkinModule",
+      "features": {
+        "legacy": true
+      },
       "styles": {
         "resources/screen.css": { "media": "screen" }
       }
     }
   },
   "ResourceFileModulePaths": {
-    "localBasePath": "resources",
-    "remoteSkinPath": "snapwikiskin-new/resources"
+    "localBasePath": "",
+    "remoteSkinPath": "snapwikiskin-new"
   }
 }
