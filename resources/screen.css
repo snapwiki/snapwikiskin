@@ -446,3 +446,7 @@ hr {
 .snap-footer p {
     margin: 12px 0px;
 }
+
+#mw-snapwikiskin-firstHeading {
+  text-align: center;
+}
