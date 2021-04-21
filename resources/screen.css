@@ -503,7 +503,7 @@ hr {
 .pure-u-24-24 {
   width: 100%;
 }
-.snap-footer {
+#footer {
   background: #2d3142;
   padding: 1em;
   color: #ffffff;
@@ -530,13 +530,13 @@ hr {
   color: white;
 }
 
-.snap-footer a {
+#footer a {
   color: white;
   text-decoration: underline;
   font-family: sans-serif;
 }
 
-.snap-footer h4 {
+#footer h4 {
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 1em;
@@ -544,6 +544,6 @@ hr {
   color: white;
   font-family: sans-serif;
 }
-.snap-footer p {
+#footer p {
   margin: 12px 0px;
 }
