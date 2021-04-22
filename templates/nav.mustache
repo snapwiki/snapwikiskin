@@ -10,6 +10,17 @@
                 <li class="pure-menu-item"><a localizable="" class="pure-menu-link forum" href="https://forum.snap.berkeley.edu/">Forum</a></li>
                 <!--   =======   Snap!Con   =======<li class="pure-menu-item"><a localizable class="pure-menu-link" target="_blank"href="https://www.snapcon.org">Snap<em>!</em>Con</a></li>-->
             </span>
+	    <li class="pure-menu-item pure-u-1-6
+                pure-menu-has-children pure-menu-allow-hover user-menu">
+                <a id="menuLink1" class="pure-menu-link visitor clickable">{{{html-user-message}}}</a>
+                <ul class="pure-menu-children">
+            {{#data-portlets.data-personal}}
+            <li class="pure-menu-item"> {{{html-items}}}</li>
+            {{/data-portlets.data-personal}}
+
+</ul>
+            </li>
+
         </ul>
     </div>
     {{#data-search-box}}
@@ -25,14 +36,4 @@
 				</div>
 			</div>
 {{/data-search-box}}
-<div class="portlet" id="p-personal" role="navigation">
-	<h3>{{msg-personaltools}}</h3>
-	<div class="pBody">
-		<ul>
-			{{#data-portlets.data-personal}}
-			{{{html-items}}}
-			{{/data-portlets.data-personal}}
-		</ul>
-	</div>
-</div>
 </nav>
