@@ -710,6 +710,11 @@ hr {
   padding-left: 5px;
   padding-right: 5px;
 }
+.mw-snapwikiskin-icon {
+  margin-top: 10px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
