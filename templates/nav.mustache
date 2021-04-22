@@ -19,11 +19,8 @@
 
 </ul>
             </li>
-
-        </ul>
-    </div>
-    {{#data-search-box}}
-			<div id="p-search" class="portlet" role="search">
+            {{#data-search-box}}
+			<!--<div id="p-search" class="search" role="search">
 				<h3><label for="searchInput">{{msg-search}}</label></h3>
 				<div id="searchBody" class="pBody">
 					<form action="{{form-action}}" id="searchform">
@@ -33,6 +30,17 @@
 						{{{html-button-search-fallback}}}
 					</form>
 				</div>
-			</div>
+			</div>-->
+            <div class="search pure-u-1-6">
+                <form action="{{form-action}}" id="searchform">
+                    <input type="text" name="query">
+                    <input type="hidden" name="title" value="{{page-title}}">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
 {{/data-search-box}}
+
+        </ul>
+
+    </div>
 </nav>
