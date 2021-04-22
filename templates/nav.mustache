@@ -10,27 +10,7 @@
                 <li class="pure-menu-item"><a localizable="" class="pure-menu-link forum" href="https://forum.snap.berkeley.edu/">Forum</a></li>
                 <!--   =======   Snap!Con   =======<li class="pure-menu-item"><a localizable class="pure-menu-link" target="_blank"href="https://www.snapcon.org">Snap<em>!</em>Con</a></li>-->
             </span>
-	    <li class="pure-menu-item pure-u-1-6
-                pure-menu-has-children pure-menu-allow-hover user-menu">
-                <ul class="pure-menu-children">
-            {{#data-portlets.data-personal}}
-            <li class="pure-menu-item"> {{{html-items}}}</li>
-            {{/data-portlets.data-personal}}
-
-</ul>
-            </li>
-            {{#data-search-box}}
-			<!--<div id="p-search" class="search" role="search">
-				<h3><label for="searchInput">{{msg-search}}</label></h3>
-				<div id="searchBody" class="pBody">
-					<form action="{{form-action}}" id="searchform">
-						<input type="hidden" name="title" value="{{page-title}}">
-						{{{html-input}}}
-						{{{html-button-search}}}
-						{{{html-button-search-fallback}}}
-					</form>
-				</div>
-			</div>-->
+                        {{#data-search-box}}
             <div class="search pure-u-1-6">
                 <form action="{{form-action}}" id="searchform">
                     <input type="text" name="query">
@@ -39,6 +19,16 @@
                 </form>
             </div>
 {{/data-search-box}}
+
+	    <li class="pure-menu-item pure-u-1-6
+                pure-menu-has-children pure-menu-allow-hover user-menu">
+                <ul class="pure-menu-children">
+            {{#data-portlets.data-personal}}
+            {{{html-items}}}
+            {{/data-portlets.data-personal}}
+
+</ul>
+            </li>
 
         </ul>
 
