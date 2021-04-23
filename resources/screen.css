@@ -751,7 +751,7 @@ html {
 }
 #mw_main {
   margin-left: 10em;
-  height: 75vh;
+  min-height: 75vh;
 }
 #mw-snapwikiskin-sidebarContainer {
   padding: .5rem;
