@@ -40,7 +40,8 @@
 	</div><!-- mw_contentwrapper -->
 
 	<div id="mw_portlets" {{{html-user-language-attributes}}}>
-		<h2>{{msg-navigation-heading}}</h2>
+	<div id="mw-snapwikiskin-sidebarContainer">
+		<img src="{{data-logos.1x}}">
 
 		<!-- portlets -->
 		{{#data-portlets-sidebar}}
@@ -50,6 +51,7 @@
 			{{/array-portlets-rest}}
 		{{/data-portlets-sidebar}}
 		{{#data-portlets.data-languages}}{{>Portlet}}{{/data-portlets.data-languages}}
+		</div>
 	</div><!-- mw_portlets -->
 </div><!-- main -->
 <div class="mw_clear"></div>
