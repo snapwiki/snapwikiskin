@@ -2,17 +2,10 @@
     <div class="links pure-g">
         <div class="pure-u-1-5">
             <p><h4 localizable>About</h4></p>
-            <p><a localizable href="https://snap.berkeley.edu/about">About Snap<i>!</i></a></p>
-            <p><a localizable href="https://snap.berkeley.edu/blog">Blog</a></p>
-            <p><a localizable href="https://snap.berkeley.edu/credits">Credits</a></p>
-            <p><a localizable href="https://snap.berkeley.edu/requirements">Technical Requirements</a></p>
-            <p><a localizable href="https://snap.berkeley.edu/partners">Partners</a></p>
-            <p><a localizable href="https://snap.berkeley.edu/source" >Source Code</a></p>
             {{#data-places}}
             {{#array-items}}
-	<li id="{{id}}">{{{html}}}</li>
-{{/array-items}}
-
+	            <li id="{{id}}">{{{html}}}</li>
+            {{/array-items}}
             {{/data-places}}
         </div>
         <div class="pure-u-1-5">
