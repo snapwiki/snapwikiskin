@@ -666,6 +666,7 @@ hr {
   font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   align-content: flex-start;
   max-width: 1080px;
   margin: 0 auto;
