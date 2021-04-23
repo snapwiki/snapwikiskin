@@ -521,7 +521,7 @@ hr {
 .pure-u-1-12,
 .pure-u-2-24 {
   width: 8.3333%;
-  *width: 8.3023%;
+  height: 10px;
 }
 .pure-u-1-8,
 .pure-u-3-24 {
@@ -739,4 +739,17 @@ html {
   -webkit-box-sizing: border-box;
   padding: 0.1em 0.5em 0.1em 1.5em;
   font-weight: bold;
+}
+#mw_portlets {
+  font-size: inherit;
+}
+#mw_portlets {
+  position: absolute;
+  top: 50px;
+  width: 10em;
+  left: 0;
+}
+#mw_main {
+  margin-left: 10em;
+  height: 75vh;
 }
