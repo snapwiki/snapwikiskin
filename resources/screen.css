@@ -834,6 +834,7 @@ hr {
   font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   align-content: flex-start;
   max-width: 1080px;
   margin: 0 auto;
@@ -955,4 +956,11 @@ textarea {
   padding: 0;
   font-family: "Linux Libertine", "Georgia", "Times", serif;
   line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
 }
