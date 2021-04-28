@@ -3,13 +3,11 @@
         <div class="pure-u-1-5">
             {{#data-places}}
             {{#array-items}}
-	            <li id="{{id}}" class="{{class}}">{{{html}}}</li>
-            {{/array-items}}
+	<p id="{{id}}">{{{html}}}</p>
+{{/array-items}}
+
             {{/data-places}}
             {{#data-info}}
-            {{#array-items}}
-	            <li id="{{id}}" class="{{class}}">{{{html}}}</li>
-            {{/array-items}}
             {{/data-info}}
         </div>
     </div>
