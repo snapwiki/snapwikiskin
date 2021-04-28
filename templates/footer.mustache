@@ -1,14 +1,13 @@
 <div id="footer" class="mw-footer">
     <div class="links pure-g">
-        <div class="pure-u-1-5">
+        <ul class="pure-u-1-5">
             {{#data-places}}
             {{#array-items}}
-	<p id="{{id}}">{{{html}}}</p>
-{{/array-items}}
-
+	            <li id="{{id}}">{{{html}}}</li>
+            {{/array-items}}
             {{/data-places}}
             {{#data-info}}
             {{/data-info}}
-        </div>
+        </ul>
     </div>
 </div>
