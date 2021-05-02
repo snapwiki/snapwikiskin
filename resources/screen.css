@@ -485,6 +485,7 @@ hr {
   display: block;
   text-decoration: none;
   white-space: nowrap;
+  height: 100%;
 }
 .pure-menu-horizontal {
   width: 100%;
