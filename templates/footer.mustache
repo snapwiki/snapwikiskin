@@ -1,16 +1,14 @@
-<div id="footer" class="mw-footer">
-    <div class=" ">
-        <ul class="">
-            {{#data-places}}
-            {{#array-items}}
-	            <span id="{{id}}">{{{html}}}</span>
-            {{/array-items}}
-            {{/data-places}}
-            {{#data-info}}
+    <div id="footer-info">
+    {{#data-info}}
 	    {{#array-items}}
-	            <span id="{{id}}">{{{html}}}</span>
-            {{/array-items}}
-            {{/data-info}}
-        </ul>
+	        <span id="{{id}}">{{{html}}}</span>
+        {{/array-items}}
+    {{/data-info}}
     </div>
-</div>
+    <div id="footer-places">
+        {{#data-places}}
+        {{#array-items}}
+	        <span id="{{id}}">{{{html}}}</span>
+        {{/array-items}}
+        {{/data-places}}
+    </div>
