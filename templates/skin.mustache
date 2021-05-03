@@ -1,6 +1,5 @@
 {{> Nav }}
-<div class="mw-snapwikiskin-main">
-<div id="mw-main">
+<div class="mw-snapwikiskin-main" id="mw-main">
 <div id="mw-header">
 	<div class="mw-indicators mw-body-content">
 		{{#array-indicators}}
@@ -29,13 +28,4 @@
 </div>
 </div>
 {{! "role="contentinfo"" is needed for a VoiceOver bug }}
-<footer id="footer" class="mw-footer" role="contentinfo" {{{html-user-language-attributes}}}>
-	{{#data-footer}}
-			{{>Footer}}
-		{{#data-icons}}
-			{{#array-items}}
-				<div id="{{id}}">{{{html}}}</div>
-			{{/array-items}}
-		{{/data-icons}}
-	{{/data-footer}}
-</footer>
+{{>Footer}}
