@@ -15,7 +15,7 @@
 	<div id="mw-portlets" {{{html-user-language-attributes}}}>
 	<div id="mw-snapwikiskin-sidebarContainer">
 		<a href="{{link-mainpage}}"><img src="{{data-logos.1x}}"></a>
-		<!-- portlets -->
+		{{! START portlet }}
 		{{#data-portlets-sidebar}}
 			{{#data-portlets-first}}{{>Portlet}}{{/data-portlets-first}}
 			{{#array-portlets-rest}}
@@ -23,6 +23,7 @@
 			{{/array-portlets-rest}}
 		{{/data-portlets-sidebar}}
 		{{#data-portlets.data-languages}}{{>Portlet}}{{/data-portlets.data-languages}}
+		{{! END portlet }}
 		</div>
 	</div>
 </div>
