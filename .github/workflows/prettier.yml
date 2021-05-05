@@ -15,6 +15,7 @@ jobs:
       - name: Check format
         run: npm test
       - name: Format code
+        if: failure()
         run: npm fix
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v4
