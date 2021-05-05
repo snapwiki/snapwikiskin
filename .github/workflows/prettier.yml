@@ -17,6 +17,8 @@ jobs:
       - name: Format code
         if: failure()
         run: npm fix
+        env:
+          ci: true
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
