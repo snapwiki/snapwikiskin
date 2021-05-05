@@ -23,7 +23,8 @@
             "tagline",
             "views",
             "snapwikiskin-nav-items"
-          ]
+          ],
+          "responsive": true
         }
       ]
     }
