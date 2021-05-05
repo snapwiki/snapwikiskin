@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "test": "prettier --check .",
-    "fix": "prettier --write"
+    "fix":  "prettier --write"
   },
   "dependencies": {
     "prettier": "^2.2.1"
