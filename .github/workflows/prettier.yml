@@ -13,10 +13,10 @@ jobs:
       - name: Install Prettier
         run: npm install --global
       - name: Check format
-        run: npm test
+        run: npm run test
       - name: Format code
         if: failure()
-        run: npm fix
+        run: npm run fix
         env:
           ci: true
       - name: Commit changed files
