@@ -895,6 +895,9 @@ html {
 #mw-snapwikiskin-sidebarContainer {
   padding: 0.5rem;
 }
+#mw-snapwikiskin-sidebarContainer:after {
+  padding-bottom: 125%;
+}
 fieldset {
   border: 1px solid #2a4b8d;
   margin: 1em 0 1em 0;
@@ -936,4 +939,7 @@ h4,
 h5,
 h6 {
   text-align: center;
+}
+#footer-places, #footer-info, #footer-poweredbyico {
+  padding: 5px;
 }
