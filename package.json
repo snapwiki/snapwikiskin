@@ -2,4 +2,5 @@
   "private": true,
   "scripts": {
     "test": "prettier --write"
+  }
 }
