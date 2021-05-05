@@ -12,7 +12,7 @@
       "args": [
         {
           "name": "snapwikiskin",
-          "templateDirectory": "skins/snapwikiskin-new/templates/",
+          "templateDirectory": "skins/snapwikiskin/templates/",
           "scripts": [],
           "styles": ["skins.snapwikiskin"],
           "messages": [
@@ -30,7 +30,7 @@
     }
   },
   "MessagesDirs": {
-    "snapwikiskin-new": ["i18n"]
+    "snapwikiskin": ["i18n"]
   },
   "ResourceModules": {
     "skins.snapwikiskin": {
