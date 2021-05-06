@@ -940,6 +940,8 @@ h5,
 h6 {
   text-align: center;
 }
-#footer-places, #footer-info, #footer-poweredbyico {
+#footer-places,
+#footer-info,
+#footer-poweredbyico {
   padding: 5px;
 }
