@@ -3,7 +3,7 @@
   "scripts": {
     "test": "prettier --check .",
     "fix": "prettier --write .",
-    "lint":"stylelint \"**/**.css\""
+    "lint": "stylelint \"**/**.css\""
   },
   "dependencies": {
     "prettier": "^2.2.1",
