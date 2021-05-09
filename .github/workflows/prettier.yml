@@ -10,8 +10,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: Install Prettier
-        run: npm install --global prettier
+      - name: Install Dependencies
+        run: npm install --global prettier & npm ci
       - name: Lint
         run: npm run lint
       - name: Check format
