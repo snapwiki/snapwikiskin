@@ -10,8 +10,8 @@ Use a better box model (opinionated).
 */
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -267,7 +267,7 @@ html {
 
 body {
   color: #2d3142;
-  background: #ffffff;
+  background: #fff;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -320,21 +320,21 @@ hr {
   margin: 0;
   border: 0;
   height: 1px;
-  background: #ffffff;
+  background: #fff;
 }
 /* Begin nav css */
 
 #top-bar {
   background: #2d3142;
   height: 48px;
-  color: #ffffff;
+  color: #fff;
   width: 100%;
   position: fixed;
   z-index: 100;
 }
 
 #top-bar a {
-  color: #ffffff;
+  color: #fff;
 }
 
 #top-bar .logo {
@@ -357,7 +357,7 @@ hr {
   right: -1px;
 }
 
-#top-bar .language-select a::after {
+#top-bar .language-select a:after {
   content: "";
 }
 
@@ -402,7 +402,7 @@ hr {
 }
 
 #top-bar .pure-menu-children {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 #top-bar .pure-menu-children .pure-menu-link,
@@ -439,9 +439,9 @@ hr {
   transform: translateY(-50%);
   height: 24px;
   width: 100%;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 14px;
-  background: #ffffff;
+  background: #fff;
   color: #2d3142;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -781,21 +781,21 @@ hr {
 footer {
   background: #2d3142;
   padding: 1em;
-  color: #ffffff;
+  color: #fff;
   margin-top: 3em;
   flex-shrink: 0;
   font-size: 0.75em;
 }
 
 .links.pure-g {
-  color: #ffffff;
+  color: #fff;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
+  text-rendering: optimizeSpeed;
   font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
@@ -822,7 +822,7 @@ footer h4 {
 }
 
 footer p {
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 footer ul {
@@ -869,9 +869,9 @@ html {
   transform: translateY(-50%);
   height: 24px;
   width: 100%;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 14px;
-  background: #ffffff;
+  background: #fff;
   color: #2d3142;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
