@@ -6,6 +6,10 @@
   "requires": {
     "MediaWiki": ">= 1.36.0"
   },
+  "AutoloadNamespaces": {
+		"Snapwikiskin\\": "includes/"
+	},
+
   "ValidSkinNames": {
     "snapwikiskin": {
       "class": "SkinMustache",
@@ -13,7 +17,7 @@
         {
           "name": "snapwikiskin",
           "templateDirectory": "skins/snapwikiskin/templates/",
-          "scripts": ["skins.snapwikiskin.search"],
+          "scripts": [],
           "styles": ["skins.snapwikiskin"],
           "messages": [
             "navigation-heading",
@@ -40,7 +44,7 @@
         "resources/skins.snapwikiskin.search/App.vue",
         {
           "name": "resources/skins.snapwikiskin.search/config.json",
-          "callback": "Hooks::getsnapwikiskinWvuiSearchResourceLoaderConfig"
+          "callback": "Snapwikiskin\\Hooks::getsnapwikiskinWvuiSearchResourceLoaderConfig"
         }
       ],
       "messages": ["search", "searchresults", "searchsuggest-containing"]
