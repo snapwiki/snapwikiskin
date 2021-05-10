@@ -9,7 +9,14 @@
   "AutoloadNamespaces": {
     "Snapwikiskin\\": "includes/"
   },
-
+"config": {		
+  "snapwikiskinWvuiSearchOptions": {
+  "value": {
+    "showThumbnail": true,
+    "showDescription": true
+  }
+}
+},
   "ValidSkinNames": {
     "snapwikiskin": {
       "class": "SkinMustache",
@@ -17,7 +24,7 @@
         {
           "name": "snapwikiskin",
           "templateDirectory": "skins/snapwikiskin/templates/",
-          "scripts": [],
+          "scripts": ["skins.snapwikiskin.search"],
           "styles": ["skins.snapwikiskin"],
           "messages": [
             "navigation-heading",

@@ -16,9 +16,6 @@
     :search-language="language"
     :show-thumbnail="showThumbnail"
     :show-description="showDescription"
-    @fetch-start="instrumentation.onFetchStart"
-    @fetch-end="instrumentation.onFetchEnd"
-    @suggestion-click="instrumentation.onSuggestionClick"
   >
     <input type="hidden" name="title" value="Special:Search" />
   </wvui-typeahead-search>
@@ -26,7 +23,7 @@
 
 <script>
 /* global SubmitEvent */
-var wvui = require( 'wvui' ),
+var wvui = require( 'wvui' );
 module.exports = {
 	name: 'App',
 	components: wvui,

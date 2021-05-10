@@ -2,7 +2,6 @@
 var Vue = require("vue").default || require("vue"),
   App = require("./App.vue"),
   config = require("./config.json");
-
 /**
  * @param {HTMLElement} searchForm
  * @param {HTMLInputElement} search
