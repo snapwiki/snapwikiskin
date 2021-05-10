@@ -13,7 +13,7 @@
         {
           "name": "snapwikiskin",
           "templateDirectory": "skins/snapwikiskin/templates/",
-          "scripts": [],
+          "scripts": ["skins.snapwikiskin.search"],
           "styles": ["skins.snapwikiskin"],
           "messages": [
             "navigation-heading",
@@ -33,6 +33,26 @@
     "snapwikiskin": ["i18n"]
   },
   "ResourceModules": {
+  "skins.snapwikiskin.search": {
+			"dependencies": [
+				"mediawiki.Uri",
+				"wvui"
+			],
+			"packageFiles": [
+				"resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",
+				"resources/skins.snapwikiskin.search/App.vue",
+				{
+					"name": "resources/skins.snapwikiskin.search/config.json",
+					"callback": "Hooks::getsnapwikiskinWvuiSearchResourceLoaderConfig"
+				}
+			],
+			"messages": [
+				"search",
+				"searchresults",
+				"searchsuggest-containing"
+			]
+		},
+
     "skins.snapwikiskin": {
       "class": "ResourceLoaderSkinModule",
       "features": {
