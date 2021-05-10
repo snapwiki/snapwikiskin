@@ -1,31 +1,27 @@
 <template>
-	<wvui-typeahead-search
-		id="searchform"
-		ref="searchForm"
-		:client="getClient"
-		:domain="domain"
-		:footer-search-text="$i18n('searchsuggest-containing').text()"
-		:suggestions-label="$i18n('searchresults').text()"
-		:accesskey="searchAccessKey"
-		:title="searchTitle"
-		:placeholder="searchPlaceholder"
-		:aria-label="searchPlaceholder"
-		:initial-input-value="searchQuery"
-		:button-label="$i18n( 'search' ).text()"
-		:form-action="action"
-		:search-language="language"
-		:show-thumbnail="showThumbnail"
-		:show-description="showDescription"
-		@fetch-start="instrumentation.onFetchStart"
-		@fetch-end="instrumentation.onFetchEnd"
-		@suggestion-click="instrumentation.onSuggestionClick"
-	>
-		<input type="hidden"
-			name="title"
-			value="Special:Search"
-		>
-
-	</wvui-typeahead-search>
+  <wvui-typeahead-search
+    id="searchform"
+    ref="searchForm"
+    :client="getClient"
+    :domain="domain"
+    :footer-search-text="$i18n('searchsuggest-containing').text()"
+    :suggestions-label="$i18n('searchresults').text()"
+    :accesskey="searchAccessKey"
+    :title="searchTitle"
+    :placeholder="searchPlaceholder"
+    :aria-label="searchPlaceholder"
+    :initial-input-value="searchQuery"
+    :button-label="$i18n('search').text()"
+    :form-action="action"
+    :search-language="language"
+    :show-thumbnail="showThumbnail"
+    :show-description="showDescription"
+    @fetch-start="instrumentation.onFetchStart"
+    @fetch-end="instrumentation.onFetchEnd"
+    @suggestion-click="instrumentation.onSuggestionClick"
+  >
+    <input type="hidden" name="title" value="Special:Search" />
+  </wvui-typeahead-search>
 </template>
 
 <script>
