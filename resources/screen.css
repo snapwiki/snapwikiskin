@@ -322,6 +322,16 @@ hr {
   height: 1px;
   background: #fff;
 }
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 /* Begin nav css */
 
 #top-bar {
@@ -450,6 +460,17 @@ hr {
   font-weight: bold;
 }
 */
+.search {
+  background: #fff;
+  transform: translateY(25%);
+  display: inline-block;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  width: 25%
+}
 .inner {
   margin: 0 auto;
 }
@@ -787,7 +808,6 @@ footer {
   flex-shrink: 0;
   font-size: 0.75em;
 }
-
 .links.pure-g {
   color: #fff;
   padding: 0;
@@ -867,19 +887,15 @@ html {
 
 #mw-portlets {
   font-size: inherit;
-}
-#mw-portlets {
   position: absolute;
   top: 50px;
   width: 10em;
   left: 0;
+  padding: .25rem;
 }
-#mw-main {
+.mw-snapwikiskin-main {
   margin-left: 10em;
   min-height: 95vh;
-}
-#mw-snapwikiskin-sidebarContainer {
-  padding: 0.5rem;
 }
 #mw-snapwikiskin-sidebarContainer:after {
   padding-bottom: 125%;
