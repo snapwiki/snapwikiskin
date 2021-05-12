@@ -69,6 +69,10 @@ Grouping content
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
+  margin: 0;
+  border: 0;
+  background: #fff;
+}
 }
 
 /*
@@ -320,12 +324,6 @@ h4 {
   margin-bottom: 1em;
 }
 
-hr {
-  margin: 0;
-  border: 0;
-  height: 1px;
-  background: #fff;
-}
 /* Begin nav css */
 
 #top-bar {
@@ -367,7 +365,7 @@ hr {
 
 #top-bar .language-select:focus,
 #top-bar .language-select:hover {
-  color: white;
+  color: #fff;
 }
 
 #top-bar .pure-menu-item {
@@ -800,18 +798,17 @@ footer {
   vertical-align: baseline;
   letter-spacing: -0.31em;
   text-rendering: optimizeSpeed;
-  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+  font-family: "FreeSans", "Arimo", "Droid Sans", "Helvetica", "Arial", sans-serif;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   align-content: flex-start;
   max-width: 1080px;
   margin: 0 auto;
-  color: white;
 }
 
 footer a {
-  color: white;
+  color: #fff;
   text-decoration: underline;
   font-family: sans-serif;
 }
@@ -821,7 +818,7 @@ footer h4 {
   font-weight: bold;
   margin-bottom: 1em;
   vertical-align: baseline;
-  color: white;
+  color: #fff;
   font-family: sans-serif;
 }
 
