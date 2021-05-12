@@ -73,7 +73,6 @@ hr {
   border: 0;
   background: #fff;
 }
-}
 
 /*
 Text-level semantics
@@ -928,4 +927,5 @@ textarea {
 #footer-info,
 #footer-poweredbyico {
   padding: 5px;
+}
 }
