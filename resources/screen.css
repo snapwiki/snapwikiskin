@@ -326,11 +326,6 @@ html {
   height: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
 
 /* Begin nav css */
 
@@ -887,18 +882,13 @@ html {
 
 #mw-portlets {
   font-size: inherit;
-  position: absolute;
-  top: 50px;
   width: 10em;
-  left: 0;
   padding: 0.25rem;
 }
 .mw-snapwikiskin-main {
-  margin-left: 10em;
   min-height: 95vh;
-}
-#mw-snapwikiskin-sidebarContainer:after {
-  padding-bottom: 125%;
+  display: flex;
+  flex-direction: row;
 }
 fieldset {
   border: 1px solid #2a4b8d;
@@ -946,4 +936,7 @@ h6 {
 #footer-info,
 #footer-poweredbyico {
   padding: 5px;
+}
+#mw-contentwrapper {
+  flex: 1;
 }

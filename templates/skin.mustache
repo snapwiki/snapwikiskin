@@ -1,9 +1,5 @@
 {{> Nav }}
 <main class="mw-snapwikiskin-main">
-{{>Header}}
-	<div id="mw-contentwrapper">
-		{{>Content}}
-	</div>
 	<div id="mw-snapwikiskin-sidebarContainer">
 		<div id="mw-portlets" {{{html-user-language-attributes}}}>
 		<a href="{{link-mainpage}}"><img src="{{data-logos.1x}}"></a>
@@ -17,6 +13,12 @@
 		{{#data-portlets.data-languages}}{{>Portlet}}{{/data-portlets.data-languages}}
 		{{! END portlet }}
 		</div>
+	</div>
+
+
+	<div id="mw-contentwrapper">
+	{{>Header}}
+		{{>Content}}
 	</div>
 </main>
 {{>Footer}}
