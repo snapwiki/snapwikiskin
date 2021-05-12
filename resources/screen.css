@@ -50,6 +50,11 @@ body {
   /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
   font-family: system-ui, -apple-system, /* Firefox supports this but not yet `system-ui` */ "Segoe UI", "Roboto",
     "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #2d3142;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -272,14 +277,6 @@ summary {
 }
 
 /* Begin elements.css */
-body {
-  color: #2d3142;
-  background: #fff;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 a {
   color: #7070a0;
   text-decoration: none;
