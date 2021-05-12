@@ -877,22 +877,13 @@ footer ul {
 }
 #mw-portlets {
   font-size: inherit;
-}
-#mw-portlets {
-  position: absolute;
-  top: 50px;
   width: 10em;
-  left: 0;
+  padding: 0.25rem;
 }
-#mw-main {
-  margin-left: 10em;
+.mw-snapwikiskin-main {
   min-height: 95vh;
-}
-#mw-snapwikiskin-sidebarContainer {
-  padding: 0.5rem;
-}
-#mw-snapwikiskin-sidebarContainer:after {
-  padding-bottom: 125%;
+  display: flex;
+  flex-direction: row;
 }
 fieldset {
   border: 1px solid #2a4b8d;
@@ -927,4 +918,7 @@ textarea {
 #footer-info,
 #footer-poweredbyico {
   padding: 5px;
+}
+#mw-contentwrapper {
+  flex: 1;
 }
