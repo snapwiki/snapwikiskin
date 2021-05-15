@@ -417,38 +417,6 @@ h4 {
   padding: 0 2em;
 }
 
-/* #top-bar div.search {
-  position: relative;
-  height: 100%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-#top-bar .search i {
-  position: absolute;
-  left: 5px;
-  color: #2d3142;
-  line-height: 48px;
-}
-
-#top-bar .search input {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 24px;
-  width: 100%;
-  border: 2px solid #fff;
-  border-radius: 14px;
-  background: #fff;
-  color: #2d3142;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  padding: 0.1em 0.5em 0.1em 1.5em;
-  font-weight: bold;
-}
-*/
 .search {
   background: #fff;
   transform: translateY(25%);
