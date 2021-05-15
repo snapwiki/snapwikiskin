@@ -23,7 +23,7 @@
 
 <script>
 /* global SubmitEvent */
-var wvui = require("wvui");
+const wvui = require("wvui");
 module.exports = {
   name: "App",
   components: wvui,
