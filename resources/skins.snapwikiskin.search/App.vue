@@ -42,7 +42,7 @@ module.exports = {
   },
   computed: {
     /**
-     * Allow wikis eg. Hebrew Wikipedia to replace the default search API client
+     * Allow wikis to replace the default search API client
      *
      * @return {void|Object}
      */
