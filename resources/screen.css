@@ -284,10 +284,6 @@ a {
   text-decoration: none;
 }
 
-em {
-  font-style: italic;
-}
-
 p,
 li {
   margin: 1em 0;
@@ -918,6 +914,7 @@ textarea {
 #footer-poweredbyico {
   padding: 5px;
 }
+
 #mw-contentwrapper {
   flex: 1;
 }
