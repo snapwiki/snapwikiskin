@@ -10,13 +10,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: Install Prettier
-        run: npm install
+      - name: Install Dependencies
+        run: npm install --global prettier & npm ci
+      - name: Lint CSS
+        run: npm run lint --fix
       - name: Check format
-        run: npm test
+        run: npx prettier --check .
       - name: Format code
         if: failure()
-        run: npm fix
+        run: npx prettier --write .
       - name: Commit changed files
         if: failure()
         uses: stefanzweifel/git-auto-commit-action@v4

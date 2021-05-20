@@ -1,19 +1,7 @@
 {{> Nav }}
-<div class="mw-snapwikiskin-main" id="mw-main">
-<div id="mw-header">
-	<div class="mw-indicators mw-body-content">
-		{{#array-indicators}}
-			<div id="{{id}}" class="{{class}}">{{{html}}}</div>
-		{{/array-indicators}}
-	</div>
-	<h1 id="mw-snapwikiskin-firstHeading" {{{html-user-language-attributes}}}>{{{html-title}}}</h1>
-</div>
-	<div id="mw-contentwrapper">
-		{{>Content}}
-	</div>
-		<div id="mw-snapwikiskin-sidebarContainer">
-
-	<div id="mw-portlets" {{{html-user-language-attributes}}}>
+<main class="mw-snapwikiskin-main">
+	<div id="mw-snapwikiskin-sidebarContainer">
+		<div id="mw-portlets" {{{html-user-language-attributes}}}>
 		<a href="{{link-mainpage}}"><img src="{{data-logos.1x}}"></a>
 		{{! START portlet }}
 		{{#data-portlets-sidebar}}
@@ -26,6 +14,11 @@
 		{{! END portlet }}
 		</div>
 	</div>
-</div>
-</div>
+
+
+	<div id="mw-contentwrapper">
+	{{>Header}}
+		{{>Content}}
+	</div>
+</main>
 {{>Footer}}

@@ -10,8 +10,8 @@ Use a better box model (opinionated).
 */
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -32,6 +32,8 @@ Use a more readable tab size (opinionated).
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
 }
 
 /*
@@ -44,15 +46,14 @@ Remove the margin in all browsers.
 
 body {
   margin: 0;
-}
-
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-body {
-  font-family: system-ui, -apple-system, /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, -apple-system, /* Firefox supports this but not yet `system-ui` */ "Segoe UI", "Roboto",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #2d3142;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
@@ -67,6 +68,9 @@ Grouping content
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
+  margin: 0;
+  border: 0;
+  background: #fff;
 }
 
 /*
@@ -96,8 +100,21 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-family: "ui-monospace", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace; /* 1 */
   font-size: 1em; /* 2 */
+}
+
+/** 
+Align headings to the centre
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
 }
 
 /**
@@ -207,6 +224,7 @@ Remove the padding so developers are not caught out when they zero out 'fieldset
 */
 legend {
   padding: 0;
+  font-size: 95%;
 }
 
 /**
@@ -261,18 +279,6 @@ summary {
 }
 
 /* Begin elements.css */
-html {
-  height: 100%;
-}
-
-body {
-  color: #2d3142;
-  background: #ffffff;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 a {
   color: #7070a0;
   text-decoration: none;
@@ -312,25 +318,19 @@ h4 {
   margin-bottom: 1em;
 }
 
-hr {
-  margin: 0;
-  border: 0;
-  height: 1px;
-  background: #ffffff;
-}
 /* Begin nav css */
 
 #top-bar {
   background: #2d3142;
   height: 48px;
-  color: #ffffff;
+  color: #fff;
   width: 100%;
   position: fixed;
   z-index: 100;
 }
 
 #top-bar a {
-  color: #ffffff;
+  color: #fff;
 }
 
 #top-bar .logo {
@@ -353,13 +353,13 @@ hr {
   right: -1px;
 }
 
-#top-bar .language-select a::after {
+#top-bar .language-select a:after {
   content: "";
 }
 
 #top-bar .language-select:focus,
 #top-bar .language-select:hover {
-  color: white;
+  color: #fff;
 }
 
 #top-bar .pure-menu-item {
@@ -398,7 +398,7 @@ hr {
 }
 
 #top-bar .pure-menu-children {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 #top-bar .pure-menu-children .pure-menu-link,
@@ -435,9 +435,9 @@ hr {
   transform: translateY(-50%);
   height: 24px;
   width: 100%;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 14px;
-  background: #ffffff;
+  background: #fff;
   color: #2d3142;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -777,33 +777,32 @@ hr {
 footer {
   background: #2d3142;
   padding: 1em;
-  color: #ffffff;
+  color: #fff;
   margin-top: 3em;
   flex-shrink: 0;
   font-size: 0.75em;
 }
 
 .links.pure-g {
-  color: #ffffff;
+  color: #fff;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   letter-spacing: -0.31em;
-  text-rendering: optimizespeed;
-  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeSpeed;
+  font-family: "FreeSans", "Arimo", "Droid Sans", "Helvetica", "Arial", sans-serif;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   align-content: flex-start;
   max-width: 1080px;
   margin: 0 auto;
-  color: white;
 }
 
 footer a {
-  color: white;
+  color: #fff;
   text-decoration: underline;
   font-family: sans-serif;
 }
@@ -813,19 +812,19 @@ footer h4 {
   font-weight: bold;
   margin-bottom: 1em;
   vertical-align: baseline;
-  color: white;
+  color: #fff;
   font-family: sans-serif;
 }
 
 footer p {
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 footer ul {
   list-style: none none;
 }
 
-#mw-snapwikiskin-firstHeading {
+#firstHeading {
   font-size: x-large;
   padding: 10px;
 }
@@ -854,20 +853,16 @@ footer ul {
   height: 1.5rem;
   width: 1.5rem;
 }
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+
 #top-bar .search input {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   height: 24px;
   width: 100%;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 14px;
-  background: #ffffff;
+  background: #fff;
   color: #2d3142;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -877,32 +872,18 @@ html {
 }
 #mw-portlets {
   font-size: inherit;
-}
-#mw-portlets {
-  position: absolute;
-  top: 50px;
   width: 10em;
-  left: 0;
+  padding: 0.25rem;
 }
-#mw-main {
-  margin-left: 10em;
+.mw-snapwikiskin-main {
   min-height: 95vh;
-}
-#mw-snapwikiskin-sidebarContainer {
-  padding: 0.5rem;
-}
-#mw-snapwikiskin-sidebarContainer:after {
-  padding-bottom: 125%;
+  display: flex;
+  flex-direction: row;
 }
 fieldset {
   border: 1px solid #2a4b8d;
   margin: 1em 0 1em 0;
   padding: 0 1em 1em;
-}
-
-legend {
-  padding: 0.5em;
-  font-size: 95%;
 }
 
 form {
@@ -928,14 +909,12 @@ textarea {
   line-height: 1.3;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-}
-#footer-places, #footer-info, #footer-poweredbyico {
+#footer-places,
+#footer-info,
+#footer-poweredbyico {
   padding: 5px;
+}
+
+#mw-contentwrapper {
+  flex: 1;
 }
