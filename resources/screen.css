@@ -199,7 +199,6 @@ button,
 Remove the inner border and padding in Firefox.
 */
 ::-moz-focus-inner {
-  border-style: none;
   padding: 0;
 }
 
@@ -764,8 +763,8 @@ footer {
   color: #fff;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
   letter-spacing: -0.31em;
   text-rendering: optimizeSpeed;
