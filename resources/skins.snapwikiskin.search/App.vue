@@ -47,14 +47,14 @@ module.exports = {
      * @return {void|Object}
      */
     getClient: function () {
-      return mw.config.get("wgVectorSearchClient", undefined);
+      return mw.config.get("wgSnapwikiskinSearchClient", undefined);
     },
     language: function () {
       return mw.config.get("wgUserLanguage");
     },
     domain: function () {
       // It might be helpful to allow this to be configurable in future.
-      return mw.config.get("wgVectorSearchHost", location.host);
+      return mw.config.get("wgSnapwikiskinSearchHost", location.host);
     },
   },
   props: {
