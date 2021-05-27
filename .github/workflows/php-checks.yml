@@ -19,5 +19,5 @@ jobs:
       env:
         CI: true
     - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Automatically fix issues detected by CI"
+      with:
+           commit_message: "Automatically fix issues detected by CI"
