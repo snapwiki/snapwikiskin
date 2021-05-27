@@ -818,15 +818,13 @@ footer ul {
   position: relative;
   z-index: 0;
 }
-.mw-snapwikiskin-main 
-{ 
+.mw-snapwikiskin-main {
   margin-top: 50px;
   padding-left: 5px;
   padding-right: 5px;
   min-height: 95vh;
   display: flex;
   flex-direction: row;
-
 }
 
 .mw-snapwikiskin-icon {
@@ -857,8 +855,6 @@ footer ul {
   width: 10em;
   padding: 0.25rem;
 }
-
-
 
 fieldset {
   border: 1px solid #2a4b8d;
