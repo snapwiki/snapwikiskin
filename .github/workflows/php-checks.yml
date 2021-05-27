@@ -13,5 +13,8 @@ jobs:
     - uses: MilesChou/composer-action@master
       with:
            args: test
+    - uses: MilesChou/composer-action@master
+      with:
+           args: fix
       env:
         CI: true
