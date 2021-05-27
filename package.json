@@ -3,11 +3,12 @@
   "scripts": {
     "prettier": "prettier --check .",
     "fix-format": "prettier --write .",
-    "lint:css": "stylelint \"**/**.css\" --fix",
+    "lint:css": "stylelint \"**/**.css\"",
+    "fix-styling": "stylelint \"**/**.css\" --fix",
     "lint:js": "eslint . --ext .js",
     "lint": "npm run lint:css && npm run lint:js",
     "test": "npm run lint && npm run prettier",
-    "fix": "npm run fix-format"
+    "fix": "npm run fix-format && npm run fix-styling"
   },
   "devDependencies": {
     "prettier": "^2.3.0",
