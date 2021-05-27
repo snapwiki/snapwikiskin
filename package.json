@@ -9,6 +9,7 @@
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-wikimedia": "^0.10.3"
+    "stylelint-config-wikimedia": "^0.10.3",
+    "eslint-config-wikimedia": "^0.20.0"
   }
 }
