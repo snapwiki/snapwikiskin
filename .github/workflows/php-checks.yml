@@ -13,5 +13,11 @@ jobs:
     - uses: MilesChou/composer-action@master
       with:
            args: test
+    - uses: MilesChou/composer-action@master
+      with:
+           args: fix
       env:
         CI: true
+    - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Automatically fix issues detected by CI"
