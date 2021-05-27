@@ -15,6 +15,7 @@ jobs:
       - name: Lint CSS
         run: npm run lint --fix
       - name: Check format
+        if: failure() || !failure()
         run: npx prettier --check .
       - name: Format code
         if: failure()

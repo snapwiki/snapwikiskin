@@ -284,10 +284,6 @@ a {
   text-decoration: none;
 }
 
-em {
-  font-style: italic;
-}
-
 p,
 li {
   margin: 1em 0;
@@ -323,7 +319,7 @@ h4 {
 }
 
 /* Begin nav css */
-#top-bar {
+.top-bar {
   background: #2d3142;
   height: 48px;
   color: #fff;
@@ -332,44 +328,44 @@ h4 {
   z-index: 100;
 }
 
-#top-bar a {
+.top-bar a {
   color: #fff;
 }
 
-#top-bar .logo {
+.top-bar .logo {
   padding-top: 1px;
   padding-bottom: 10px;
   width: 53%;
 }
 
-#top-bar .run,
-#top-bar .explore {
+.top-bar .run,
+.top-bar .explore {
   margin-right: 1em;
 }
 
-#top-bar .language-select {
+.top-bar .language-select {
   position: relative;
 }
 
-#top-bar .languages {
+.top-bar .languages {
   left: auto;
   right: -1px;
 }
 
-#top-bar .language-select a:after {
+.top-bar .language-select a:after {
   content: "";
 }
 
-#top-bar .language-select:focus,
-#top-bar .language-select:hover {
+.top-bar .language-select:focus,
+.top-bar .language-select:hover {
   color: #fff;
 }
 
-#top-bar .pure-menu-item {
+.top-bar .pure-menu-item {
   vertical-align: inherit;
 }
 
-#top-bar .pure-menu ul.pure-menu-list {
+.top-bar .pure-menu ul.pure-menu-list {
   display: block;
   font-size: 14px;
   line-height: 48px;
@@ -378,44 +374,45 @@ h4 {
   margin: 0 auto;
 }
 
-#top-bar .pure-menu-link,
+.top-bar .pure-menu-link,
 .pure-menu-children > li {
   padding: 0 2ch;
   text-align: center;
 }
 
-#top-bar .pure-menu-link:focus,
-#top-bar .pure-menu-link:hover,
+.top-bar .pure-menu-link:focus,
+.top-bar .pure-menu-link:hover,
 .pure-menu-children > li:hover {
   color: #2d3142;
 }
 
-#top-bar .pure-menu ul.pure-menu-list .pure-menu-item {
+.top-bar .pure-menu ul.pure-menu-list .pure-menu-item {
   font-weight: bold;
 }
 
-#top-bar .pure-menu-horizontal .pure-menu-children {
+.top-bar .pure-menu-horizontal .pure-menu-children {
   width: auto;
   min-width: 100%;
   background: #2d3142;
 }
 
-#top-bar .pure-menu-children {
+.top-bar .pure-menu-children {
   border: 1px solid #fff;
 }
 
-#top-bar .pure-menu-children .pure-menu-link,
+.top-bar .pure-menu-children .pure-menu-link,
 .pure-menu-children > li {
   padding: 0 0.5em;
 }
 
-#top-bar .language-select .pure-menu-children {
+.top-bar .language-select .pure-menu-children {
   width: auto;
 }
 
-#top-bar .language-select .pure-menu-children a {
+.top-bar .language-select .pure-menu-children a {
   padding: 0 2em;
 }
+
 
 .search {
   background: #fff;
@@ -836,7 +833,7 @@ footer ul {
   width: 1.5rem;
 }
 
-#top-bar .search input {
+.top-bar .search input {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -897,6 +894,7 @@ textarea {
 #footer-poweredbyico {
   padding: 5px;
 }
+
 #mw-contentwrapper {
   flex: 1;
 }
