@@ -1,9 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "test": "prettier --check .",
-    "fix": "prettier --write .",
-    "lint": "stylelint \"**/**.css\" --fix"
+    "prettier": "prettier --check .",
+    "fix-format": "prettier --write .",
+    "lint:css": "stylelint \"**/**.css\" --fix",
+    "lint:js": "eslint . --ext .js",
+    "lint": "npm run lint:css && npm run lint:js",
+    "test": "npm run lint && npm run prettier",
+    "fix": "npm run fix-format"
   },
   "devDependencies": {
     "prettier": "^2.3.0",
