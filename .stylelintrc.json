@@ -2,6 +2,9 @@
   "extends": ["stylelint-config-wikimedia", "stylelint-config-prettier"],
   "rules": {
     "no-descending-specificity": null,
-    "selector-max-id": 1
+    "selector-max-id": 1,
+    "unit-allowed-list": [
+      "px", "em", "deg", "rem"
+    ]
   }
 }
