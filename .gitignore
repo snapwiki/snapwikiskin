@@ -1,2 +1,4 @@
+# Node.JS dependencies
 node_modules
+# PHP dependencies
 vendor
