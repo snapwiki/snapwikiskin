@@ -15,6 +15,6 @@ class Hooks {
 		ResourceLoaderContext $context,
 		Config $config
 	) {
-		return $config->get( 'snapwikiskinWvuiSearchOptions' );
+		return $config->get( 'SnapwikiskinWvuiSearchOptions' );
 	}
 }
