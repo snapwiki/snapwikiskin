@@ -7,15 +7,15 @@ const Vue = require( 'vue' ).default || require( 'vue' ),
  * @param {HTMLInputElement} search
  * @return {void}
  */
-function initApp(searchForm, search) {
+function initApp( searchForm, search ) {
   // eslint-disable-next-line no-new
-  new Vue({
-    el: searchForm,
-    /**
-     *
-     * @param {Function} createElement
-     * @return {Vue.VNode}
-     */
+  new Vue ( { 
+  el: searchForm,
+  /**
+  *
+  * @param {Function} createElement
+  * @return {Vue.VNode}
+  */
     render: function (createElement) {
       return createElement(App, {
         props: $.extend(
