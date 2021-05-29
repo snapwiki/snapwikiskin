@@ -32,10 +32,10 @@ function initApp( searchForm, search ) {
           // Pass additional config from server.
           config
          ),
-      });
+       });
      },
-  });
-}
+   });
+ }
 /**
  * @param {Document} document
  * @return {void}
