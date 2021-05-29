@@ -19,6 +19,7 @@ jobs:
         if: failure()
         run: npm run fix
       - name: Commit changed files
+        if: failure()
         uses: stefanzweifel/git-auto-commit-action@v4
         with: 
           commit_message: "Automatically fixing lint errors"
