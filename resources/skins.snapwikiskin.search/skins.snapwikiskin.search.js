@@ -18,14 +18,14 @@ function initApp( searchForm, search ) {
             * @return {Vue.VNode}
             */
             render: function ( createElement ) {
-      return createElement(App, {
+      return createElement( App, {
         props: $.extend(
           {
             autofocusInput: search === document.activeElement,
-            action: searchForm.getAttribute("action"),
-            searchAccessKey: search.getAttribute("accessKey"),
-            searchTitle: search.getAttribute("title"),
-            searchPlaceholder: search.getAttribute("placeholder"),
+            action: searchForm.getAttribute( 'action' ),
+            searchAccessKey: search.getAttribute( 'accessKey' ),
+            searchTitle: search.getAttribute( 'title' ),
+            searchPlaceholder: search.getAttribute( 'placeholder' ),
             searchQuery: search.value,
           },
           // Pass additional config from server.
@@ -39,12 +39,11 @@ function initApp( searchForm, search ) {
  * @param {Document} document
  * @return {void}
  */
-function main(document) {
-  const searchForm = /** @type {HTMLElement} */ (document.querySelector("#searchform")),
-    search = /** @type {HTMLInputElement|null} */ (document.getElementById("searchInput"));
-  if (search && searchForm) {
-    initApp(searchForm, search);
+function main( document ) {
+  const searchForm = /** @type {HTMLElement} */ ( document.querySelector( '#searchform' ) ),
+    search = /** @type {HTMLInputElement|null} */ ( document.getElementById( 'searchInput' ) );
+  if ( search && searchForm ) {
+    initApp( searchForm, search );
   }
 }
-main(document);
-
+main( document );
