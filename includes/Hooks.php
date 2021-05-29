@@ -3,6 +3,7 @@ namespace Snapwikiskin;
 
 use Config;
 use ResourceLoaderContext;
+use ResourceLoader;
 
 class Hooks {
 	/**
