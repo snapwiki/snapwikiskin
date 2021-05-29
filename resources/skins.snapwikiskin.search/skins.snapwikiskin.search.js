@@ -39,6 +39,7 @@ function initApp( searchForm, search ) {
  * @param {Document} document
  * @return {void}
  */
+//eslint-disable-next-line no-implicit-globals
 function main( document ) {
   const searchForm = /** @type {HTMLElement} */ ( document.querySelector( '#searchform' ) ),
     search = /** @type {HTMLInputElement|null} */ ( document.getElementById( 'searchInput' ) );
