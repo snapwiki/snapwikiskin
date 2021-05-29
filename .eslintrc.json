@@ -3,6 +3,7 @@
     "extends": ["wikimedia/client-es6", "wikimedia/mediawiki", "wikimedia/jquery"],
     "rules": {
         "indent": "off",
-        "no-multiple-empty-lines": "off"
+        "no-multiple-empty-lines": "off",
+        "comma-dangle": "off"
     }
 }
