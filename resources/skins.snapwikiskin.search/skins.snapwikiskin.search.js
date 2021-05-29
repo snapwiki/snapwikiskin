@@ -14,10 +14,10 @@ function initApp( searchForm, search ) {
             el: searchForm,
             // eslint-disable-next-line jsdoc/check-alignment
             /**
-            *
-            * @param {Function} createElement
-            * @return {Vue.VNode}
-            */
+             *
+             * @param {Function} createElement
+             * @return {Vue.VNode}
+             */
             render: function ( createElement ) {
       return createElement( App, {
         props: $.extend(
@@ -32,9 +32,9 @@ function initApp( searchForm, search ) {
           // Pass additional config from server.
           config
          ),
-       });
+       } );
      },
-   });
+   } );
  }
 /**
  * @param {Document} document
