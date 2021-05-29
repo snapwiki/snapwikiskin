@@ -2,6 +2,10 @@
     "root": true,
     "extends": ["wikimedia/client-es6", "wikimedia/mediawiki", "wikimedia/jquery"],
     "rules": {
-      "indent": "off"
+        "indent": "off",
+        "no-multiple-empty-lines": {
+            "max": 1,
+            "maxEOF": 1
+        }  
     }
 }
