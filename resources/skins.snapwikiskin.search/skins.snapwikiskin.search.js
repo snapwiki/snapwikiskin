@@ -7,11 +7,12 @@ const Vue = require( 'vue' ).default || require( 'vue' ),
  * @param {HTMLInputElement} search
  * @return {void}
  */
-//eslint-disable-next-line no-implicit-globals
+// eslint-disable-next-line no-implicit-globals
 function initApp( searchForm, search ) {
       // eslint-disable-next-line no-new
       new Vue( {
             el: searchForm,
+            // eslint-disable-next-line jsdoc/check-alignment
             /**
             *
             * @param {Function} createElement
@@ -30,16 +31,16 @@ function initApp( searchForm, search ) {
           },
           // Pass additional config from server.
           config
-        ),
+         ),
       });
-    },
+     },
   });
 }
 /**
  * @param {Document} document
  * @return {void}
  */
-//eslint-disable-next-line no-implicit-globals
+// eslint-disable-next-line no-implicit-globals
 function main( document ) {
   const searchForm = /** @type {HTMLElement} */ ( document.querySelector( '#searchform' ) ),
     search = /** @type {HTMLInputElement|null} */ ( document.getElementById( 'searchInput' ) );
