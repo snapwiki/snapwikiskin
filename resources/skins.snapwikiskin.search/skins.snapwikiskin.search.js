@@ -1,7 +1,7 @@
 /** @module search */
 const Vue = require( 'vue' ).default || require( 'vue' ),
-  App = require( './App.vue' ),
-  config = require( './config.json' );
+      App = require( './App.vue' ),
+      config = require( './config.json' );
 /**
  * @param {HTMLElement} searchForm
  * @param {HTMLInputElement} search
@@ -9,13 +9,13 @@ const Vue = require( 'vue' ).default || require( 'vue' ),
  */
 function initApp( searchForm, search ) {
   // eslint-disable-next-line no-new
-  new Vue ( { 
-  el: searchForm,
-  /**
-  *
-  * @param {Function} createElement
-  * @return {Vue.VNode}
-  */
+  new Vue( {
+    el: searchForm,
+    /**
+    *
+    * @param {Function} createElement
+    * @return {Vue.VNode}
+    */
     render: function (createElement) {
       return createElement(App, {
         props: $.extend(
