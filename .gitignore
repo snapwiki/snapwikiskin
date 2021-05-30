@@ -2,3 +2,5 @@
 node_modules
 # PHP dependencies
 vendor
+# ESLint cache
+.eslintcache
