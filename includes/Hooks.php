@@ -8,9 +8,9 @@ class Hooks {
 	/**
 	 * @param ResourceLoaderContext $context
 	 * @param Config $config
-	 * @return $wgsnapwikiskinWvuiSearchOptions
+	 * @return $wgSnapwikiskinWvuiSearchOptions
 	 */
-	public static function getsnapwikiskinWvuiSearchResourceLoaderConfig(
+	public static function getSnapwikiskinWvuiSearchResourceLoaderConfig(
 		ResourceLoaderContext $context,
 		Config $config
 	) {
