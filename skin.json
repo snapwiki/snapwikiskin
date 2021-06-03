@@ -30,7 +30,7 @@
       "args": [
         {
           "name": "snapwikiskin",
-          "templateDirectory": "skins/snapwikiskin/templates/",
+          "templateDirectory": "skins/snapwikiskin/templates/minified/",
           "scripts": ["skins.snapwikiskin.search"],
           "styles": ["skins.snapwikiskin"],
           "messages": [
