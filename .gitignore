@@ -2,3 +2,5 @@
 node_modules
 # PHP dependencies
 vendor
+# Duplicate minified version of Mustache templates made due to an upstream bug
+templates/minified/minified/
