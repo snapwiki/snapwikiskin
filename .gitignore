@@ -4,3 +4,5 @@ node_modules
 vendor
 # Duplicate minified version of Mustache templates made due to an upstream bug
 templates/minified/minified/
+# ESLint cache
+.eslintcache
