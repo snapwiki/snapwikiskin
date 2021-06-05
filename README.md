@@ -17,3 +17,15 @@ This program is free software: you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
+
+## Installation 
+
+* Clone this repository with Git into your "skins" folder using the following command:
+```Bash
+git clone https://github.com/snapwiki/snapwikiskin.git
+```
+* Update LocalSettings.php to add the following line:
+```PHP
+wfLoadSkin( 'snapwikiskin' );
+```
+* Go to Special:Version on your wiki and look at the "Installed skins" section. It should now list Snap! Wiki Skin and its version, license and contributors.
