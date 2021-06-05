@@ -1,3 +1,4 @@
+*:warning: This branch is unsuitable for use in production. You should switch to the "stable" branch for production wikis.*
 # Snap<i>!</i> Wiki Skin
 
 Snap<i>!</i> Wiki Skin is a MediaWiki skin written with Mustache and Vue.JS templates with the Snap<i>!</i> Wiki and Snap<i>!</i> website's layout in mind.
