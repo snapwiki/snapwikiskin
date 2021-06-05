@@ -4,12 +4,6 @@ _:warning: This branch is unsuitable for use in production. You should switch to
 
 Snap<i>!</i> Wiki Skin is a MediaWiki skin written with Mustache and Vue.JS templates with the Snap<i>!</i> Wiki and Snap<i>!</i> website's layout in mind.
 
-
-
-
-
-
-
 ## Installation
 
 - Clone this repository with Git into your "skins" folder using the following command:
