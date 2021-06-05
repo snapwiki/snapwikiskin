@@ -35,7 +35,6 @@ html {
   text-size-adjust: 100%; /* According to MDN, Edge 79+ does not support the vendor prefixed rule. See https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
 }
 
 /*
@@ -513,7 +512,6 @@ h4 {
   white-space: nowrap;
   overflow-y: hidden;
   overflow-x: auto;
-  -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
   padding: 0.5em 0;
 }
