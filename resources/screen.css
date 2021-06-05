@@ -34,7 +34,6 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
 }
 
 /*
@@ -512,7 +511,6 @@ h4 {
   white-space: nowrap;
   overflow-y: hidden;
   overflow-x: auto;
-  -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
   padding: 0.5em 0;
 }
