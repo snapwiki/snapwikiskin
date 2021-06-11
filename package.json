@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "minify": "minhtml --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
+  },
+  "devDependencies": {
+    "minhtml": "^0.3.0",
+  }
+}
