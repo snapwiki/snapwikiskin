@@ -9,6 +9,7 @@
   "devDependencies": {
     "@storybook/html": "^6.2.9",
     "minhtml": "^0.3.0",
+    "mustache": "^4.2.0",
     "prettier": "^2.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
