@@ -7,6 +7,7 @@
     "minify": "minhtml --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
   },
   "devDependencies": {
+    "@storybook/html": "^6.2.9",
     "minhtml": "^0.3.0",
     "prettier": "^2.3.1",
     "stylelint": "^13.13.1",
