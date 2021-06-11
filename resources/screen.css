@@ -845,3 +845,8 @@ textarea {
     "Segoe UI Emoji";
   margin: 0.02rem;
 }
+
+.printfooter {
+  display: none;
+}
+
