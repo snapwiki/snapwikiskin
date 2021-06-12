@@ -2,16 +2,15 @@
 namespace Snapwikiskin;
 
 use Config;
-use ResourceLoader;
 use ResourceLoaderContext;
 
 class Hooks {
 	/**
-	* @param ResourceLoaderContext $context
-	* @param Config $config
-	* @return $wgsnapwikiskinWvuiSearchOptions
-	*/
-	public static function getsnapwikiskinWvuiSearchResourceLoaderConfig(
+	 * @param ResourceLoaderContext $context
+	 * @param Config $config
+	 * @return $wgSnapwikiskinWvuiSearchOptions
+	 */
+	public static function getSnapwikiskinWvuiSearchResourceLoaderConfig(
 		ResourceLoaderContext $context,
 		Config $config
 	) {

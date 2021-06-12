@@ -1,0 +1,23 @@
+name: Minify Mustache templates
+on: 
+  push:
+
+jobs:
+  minify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          
+      - name: Install minhtml
+        run:  npm install --global minhtml
+      - name: Minify templates
+        run:  npm run minify
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Minify Mustache templates"
+          
