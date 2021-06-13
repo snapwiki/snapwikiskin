@@ -53,7 +53,7 @@
   },
   "ResourceModules": {
     "skins.snapwikiskin.search": {
-      "dependencies": ["mediawiki.Uri", "wvui"],
+      "dependencies": ["mediawiki.Uri", "wvui-search"],
       "packageFiles": [
         "resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",
         "resources/skins.snapwikiskin.search/App.vue",
