@@ -5,7 +5,7 @@
   "type": "skin",
   "version": "1.0.0",
   "requires": {
-    "MediaWiki": ">= 1.36.0"
+    "MediaWiki": ">= 1.37.0"
   },
   "AutoloadNamespaces": {
     "Snapwikiskin\\": "includes/"
