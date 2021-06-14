@@ -3,6 +3,6 @@
   "rules": {
     "no-descending-specificity": null,
     "selector-max-id": 1,
-    "unit-allowed-list": ["px", "em", "deg", "rem", "vh", "%", "ch"],
+    "unit-allowed-list": ["px", "em", "deg", "rem", "vh", "%", "ch"]
   }
 }
