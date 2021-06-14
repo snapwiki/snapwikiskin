@@ -359,8 +359,8 @@ h4 {
 
 .top-bar .pure-menu ul.pure-menu-list {
   display: block;
-  font-size: 14px;
-  line-height: 48px;
+  font-size: 0.875em;
+  line-height: 3em;
   height: 48px;
   width: 1080px;
   margin: 0 auto;
