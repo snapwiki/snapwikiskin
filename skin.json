@@ -3,7 +3,7 @@
   "author": ["R4356th", "GrahamSH"],
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "requires": {
     "MediaWiki": ">= 1.36.0"
   },
