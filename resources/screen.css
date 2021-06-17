@@ -847,5 +847,5 @@ textarea {
 }
 
 .printfooter {
-  visibility: none;
+  visibility: hidden;
 }
