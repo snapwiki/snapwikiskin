@@ -62,7 +62,7 @@
           "callback": "Snapwikiskin\\Hooks::getSnapwikiskinWvuiSearchResourceLoaderConfig"
         }
       ],
-      "messages": ["search", "searchresults", "searchsuggest-containing"]
+      "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
     },
 
     "skins.snapwikiskin": {
