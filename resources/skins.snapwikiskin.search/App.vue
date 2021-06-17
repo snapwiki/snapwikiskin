@@ -11,7 +11,7 @@
     :placeholder="searchPlaceholder"
     :aria-label="searchPlaceholder"
     :initial-input-value="searchQuery"
-    :button-label="$i18n('search').text()"
+    :button-label="$i18n('searchbutton').text()"
     :form-action="action"
     :search-language="language"
     :show-thumbnail="showThumbnail"
