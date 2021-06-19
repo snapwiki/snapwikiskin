@@ -83,6 +83,9 @@
       }
     }
   },
+  "RawHtmlMessages": [
+    "snapwikiskin-nav-items"
+  ],
   "ResourceFileModulePaths": {
     "localBasePath": "",
     "remoteSkinPath": "snapwikiskin"
