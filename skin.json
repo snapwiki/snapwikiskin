@@ -3,7 +3,8 @@
   "author": ["R4356th", "GrahamSH"],
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "url": "https://www.mediawiki.org/wiki/Skin:Snap!_Wiki_Skin",
   "requires": {
     "MediaWiki": ">= 1.36.0"
   },
