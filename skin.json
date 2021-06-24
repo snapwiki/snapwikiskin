@@ -1,6 +1,7 @@
 {
-  "name": "Snap! Wiki Skin",
+  "namemsg": "snapwikiskin",
   "author": ["R4356th", "GrahamSH"],
+  "descriptionmsg": "snapwikiskin-desc",
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
   "version": "1.0.3",
