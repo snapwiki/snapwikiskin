@@ -19,12 +19,12 @@
       "description": "Override default search API. Can be used with $wgDisableTextSearch and $wgSearchForwardUrl to mimic user experience on production."
     },
     "SnapwikiskinUseWvuiSearch": {
-      "value": false
+      "value": true
     },
     "SnapwikiskinWvuiSearchOptions": {
       "value": {
-        "showThumbnail": true,
-        "showDescription": true
+        "showThumbnail": false,
+        "showDescription": false
       }
     }
   },
