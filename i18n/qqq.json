@@ -3,6 +3,7 @@
     "authors": ["R4356th"]
   },
   "snapwikiskin": "Skin name",
+  "skinname-snapwikiskin": "Skin name shown in Special:Preferences",
   "snapwikiskin-desc": "Skin description",
   "snapwikiskin-nav-items": "Message displayed on \"MediaWiki:Snapwikiskin-nav-items\" that explains what the interface message does."
 }
