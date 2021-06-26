@@ -3,6 +3,7 @@
     "authors": ["GrahamSH"]
   },
   "snapwikiskin": "Snap! Wiki Skin",
+  "skinname-snapwikiskin": "Snap! Wiki Skin",
   "snapwikiskin-desc": "A MediaWiki skin written with the Snap! website in mind",
   "snapwikiskin-nav-items": "<!-- HTML added here will be served in the top navigation bar for all users. -->"
 }
