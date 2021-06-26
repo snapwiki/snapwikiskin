@@ -843,3 +843,10 @@ textarea {
 .printfooter {
   visibility: hidden;
 }
+
+#catlinks {
+  text-align: left;
+  border: 1px solid;
+  padding: 5px;
+  background-color: #D3D3D3;
+}
