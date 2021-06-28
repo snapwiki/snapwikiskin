@@ -72,6 +72,7 @@
     "skins.snapwikiskin": {
       "class": "ResourceLoaderSkinModule",
       "features": {
+        "content-parser-output": true,
         "content-thumbnails": true,
         "interface-category": true,
         "content-tables": true,
