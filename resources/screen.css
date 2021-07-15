@@ -324,6 +324,13 @@ h4 {
   color: #fff;
 }
 
+.mw-wiki-logo {
+  background-size: 100%;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  width: 53%;
+}
+
 .top-bar .run,
 .top-bar .explore {
   margin-right: 1em;
