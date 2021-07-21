@@ -1,5 +1,5 @@
 /** @module search */
-var Vue = require("vue").default || require("vue"),
+const Vue = require("vue").default || require("vue"),
   App = require("./App.vue"),
   config = require("./config.json");
 /**
@@ -39,7 +39,7 @@ function initApp(searchForm, search) {
  * @return {void}
  */
 function main(document) {
-  var searchForm = /** @type {HTMLElement} */ (document.querySelector("#searchform")),
+  const searchForm = /** @type {HTMLElement} */ (document.querySelector("#searchform")),
     search = /** @type {HTMLInputElement|null} */ (document.getElementById("searchInput"));
   if (search && searchForm) {
     initApp(searchForm, search);
