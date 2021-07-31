@@ -80,7 +80,8 @@
         "i18n-all-lists-margins": true,
         "i18n-headings": true,
         "interface-category": true,
-        "interface-message-box": true
+        "interface-message-box": true,
+        "normalize": false
       },
       "styles": {
         "resources/screen.css": {
