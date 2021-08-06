@@ -68,12 +68,11 @@
       ],
       "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
     },
-
     "skins.snapwikiskin": {
       "class": "ResourceLoaderSkinModule",
       "features": {
         "content-parser-output": true,
-        "content-thumbnails": true,
+        "content-media": true,
         "content-tables": true,
         "content-links": true,
         "i18n-ordered-lists": true,
