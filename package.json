@@ -7,6 +7,8 @@
     "minify": "minhtml --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
   },
   "devDependencies": {
+    "browserslist": "^4.16.7",
+    "browserslist-config-wikimedia": "^0.2.0",
     "minhtml": "^0.4.0",
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
