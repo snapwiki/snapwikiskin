@@ -13,7 +13,7 @@ jobs:
           node-version: 12.x
           
       - name: Install minhtml
-        run:  npm install --global minhtml@v0.4.0
+        run:  npm install --global minhtml
       - name: Minify templates
         run:  npm run minify
       - name: Commit changed files
