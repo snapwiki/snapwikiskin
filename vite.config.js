@@ -9,7 +9,7 @@ export default defineConfig( {
 	build: {
 		outDir: '../dist',
 		assetsDir: '',
-		minify: false,
+		minify: true,
 		emptyOutDir: true,
 		target: 'es2015',
 
