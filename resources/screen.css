@@ -869,6 +869,6 @@ FIXME: Remove this after the wiki is upgraded to 1.37
 */
 
 span.comment {
-	font-style: italic;
-	unicode-bidi: isolate;
+  font-style: italic;
+  unicode-bidi: isolate;
 }
