@@ -1,8 +1,6 @@
 {
   "extends": ["stylelint-config-wikimedia", "stylelint-config-prettier"],
-  "plugins": [
-    "stylelint-no-unsupported-browser-features"
-  ],
+  "plugins": ["stylelint-no-unsupported-browser-features"],
   "rules": {
     "no-descending-specificity": null,
     "selector-max-id": 1,
