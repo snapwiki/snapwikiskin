@@ -872,3 +872,9 @@ span.comment {
 	font-style: italic;
 	unicode-bidi: isolate;
 }
+
+/* Used by extensions to output errors */
+.error {
+  font-weight: bold;
+  color: #a55858;
+}
