@@ -72,7 +72,6 @@
       "class": "ResourceLoaderSkinModule",
       "features": {
         "content-media": true,
-        "interface-category": true,
         "content-parser-output": true,
         "content-tables": true,
         "content-links": true,
