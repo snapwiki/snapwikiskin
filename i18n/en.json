@@ -2,6 +2,10 @@
   "@metadata": {
     "authors": ["GrahamSH", "R4356th"]
   },
-
-  "snapwikiskin-nav-items": "<!-- HTML added here will be served in the top navigation bar for all users. -->"
+  "snapwikiskin": "Snap! Wiki Skin",
+  "skinname-snapwikiskin": "Snap! Wiki Skin",
+  "snapwikiskin-desc": "A MediaWiki skin written with the Snap! website in mind",
+  "snapwikiskin-nav-items": "<!-- HTML added here will be served in the top navigation bar for all users. -->",
+  "snapwikiskin.css": "/* All CSS here will be loaded for users of the Snap! Wiki Skin skin */",
+  "snapwikiskin.js": "/* All JavaScript here will be loaded for users of the Snap! Wiki Skin skin */"
 }

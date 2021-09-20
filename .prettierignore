@@ -3,3 +3,4 @@ composer.json
 package.json
 composer.lock
 package-lock.json
+templates/minified/*

@@ -1,0 +1,2 @@
+extends browserslist-config-wikimedia/basic
+not IE

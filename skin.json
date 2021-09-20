@@ -1,9 +1,12 @@
 {
   "name": "Snap! Wiki Skin",
+  "namemsg": "snapwikiskin",
   "author": ["R4356th", "GrahamSH"],
+  "descriptionmsg": "snapwikiskin-desc",
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "url": "https://www.mediawiki.org/wiki/Skin:Snap!_Wiki_Skin",
   "requires": {
     "MediaWiki": ">= 1.37.0"
   },
@@ -16,12 +19,12 @@
       "description": "Override default search API. Can be used with $wgDisableTextSearch and $wgSearchForwardUrl to mimic user experience on production."
     },
     "SnapwikiskinUseWvuiSearch": {
-      "value": false
+      "value": true
     },
     "SnapwikiskinWvuiSearchOptions": {
       "value": {
-        "showThumbnail": true,
-        "showDescription": true
+        "showThumbnail": false,
+        "showDescription": false
       }
     }
   },
@@ -54,6 +57,7 @@
   "ResourceModules": {
     "skins.snapwikiskin.search": {
       "dependencies": ["mediawiki.Uri", "wvui-search"],
+      "es6": true,
       "packageFiles": [
         "resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",
         "resources/skins.snapwikiskin.search/App.vue",
@@ -62,17 +66,22 @@
           "callback": "Snapwikiskin\\Hooks::getSnapwikiskinWvuiSearchResourceLoaderConfig"
         }
       ],
-      "messages": ["search", "searchresults", "searchsuggest-containing"]
+      "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
     },
     "skins.snapwikiskin": {
       "class": "ResourceLoaderSkinModule",
       "features": {
         "content-media": true,
         "interface-category": true,
+        "content-parser-output": true,
         "content-tables": true,
+        "content-links": true,
         "i18n-ordered-lists": true,
         "i18n-all-lists-margins": true,
-        "i18n-headings": true
+        "i18n-headings": true,
+        "interface-category": true,
+        "interface-message-box": true,
+        "normalize": false
       },
       "styles": {
         "resources/screen.css": {
@@ -81,6 +90,7 @@
       }
     }
   },
+  "RawHtmlMessages": ["snapwikiskin-nav-items"],
   "ResourceFileModulePaths": {
     "localBasePath": "",
     "remoteSkinPath": "snapwikiskin"
