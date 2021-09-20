@@ -862,17 +862,6 @@ textarea {
   font-weight: bold;
 }
 
-/* Copied from MediaWiki's interface.helpers.styles.less */
-/* 
-Needed for https://phabricator.wikimedia.org/T288907
-FIXME: Remove this after the wiki is upgraded to 1.37 
-*/
-
-span.comment {
-	font-style: italic;
-	unicode-bidi: isolate;
-}
-
 /* Used by extensions to output errors */
 .error {
   font-weight: bold;
