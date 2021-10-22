@@ -5,10 +5,10 @@
   "descriptionmsg": "snapwikiskin-desc",
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "url": "https://www.mediawiki.org/wiki/Skin:Snap!_Wiki_Skin",
   "requires": {
-    "MediaWiki": ">= 1.36.0"
+    "MediaWiki": ">= 1.37.0"
   },
   "AutoloadNamespaces": {
     "Snapwikiskin\\": "includes/"
@@ -34,7 +34,7 @@
       "args": [
         {
           "name": "snapwikiskin",
-          "templateDirectory": "skins/snapwikiskin/templates/minified/",
+          "templateDirectory": "templates/minified/",
           "scripts": ["skins.snapwikiskin.search"],
           "styles": ["skins.snapwikiskin"],
           "messages": [
@@ -56,7 +56,7 @@
   },
   "ResourceModules": {
     "skins.snapwikiskin.search": {
-      "dependencies": ["mediawiki.Uri", "wvui"],
+      "dependencies": ["mediawiki.Uri", "wvui-search"],
       "es6": true,
       "packageFiles": [
         "resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",
@@ -68,12 +68,11 @@
       ],
       "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
     },
-
     "skins.snapwikiskin": {
       "class": "ResourceLoaderSkinModule",
       "features": {
+        "content-media": true,
         "content-parser-output": true,
-        "content-thumbnails": true,
         "content-tables": true,
         "content-links": true,
         "i18n-ordered-lists": true,
