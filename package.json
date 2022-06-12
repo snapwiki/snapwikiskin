@@ -9,7 +9,7 @@
   "devDependencies": {
     "browserslist": "^4.20.2",
     "browserslist-config-wikimedia": "^0.3.0",
-    "minhtml": "^1.0.1",
+    "minhtml": "^1.1.0",
     "prettier": "^2.6.2",
     "stylelint": "^14.9.0",
     "stylelint-config-prettier": "^9.0.3",
