@@ -10,7 +10,7 @@
     "browserslist": "^4.20.4",
     "browserslist-config-wikimedia": "^0.4.0",
     "minhtml": "^1.1.0",
-    "prettier": "^2.7.0",
+    "prettier": "^2.7.1",
     "stylelint": "^14.9.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-wikimedia": "^0.13.0",
