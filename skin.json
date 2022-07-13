@@ -5,10 +5,10 @@
   "descriptionmsg": "snapwikiskin-desc",
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "url": "https://www.mediawiki.org/wiki/Skin:Snap!_Wiki_Skin",
   "requires": {
-    "MediaWiki": ">= 1.37.0"
+    "MediaWiki": ">= 1.38.0"
   },
   "AutoloadNamespaces": {
     "Snapwikiskin\\": "includes/"
