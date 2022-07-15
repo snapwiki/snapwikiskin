@@ -8,7 +8,7 @@ const Vue = require("vue").default || require("vue"),
  * @return {void}
  */
 function initApp(searchForm, search) {
-  Vue.createMwapp(
+  Vue.createMwApp(
     App,
     $.extend(
       {
