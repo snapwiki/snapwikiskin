@@ -8,31 +8,21 @@ const Vue = require("vue").default || require("vue"),
  * @return {void}
  */
 function initApp(searchForm, search) {
-  // eslint-disable-next-line no-new
-  new Vue({
-    el: searchForm,
-    /**
-     *
-     * @param {Function} createElement
-     * @return {Vue.VNode}
-     */
-    render: function (createElement) {
-      return createElement(App, {
-        props: $.extend(
-          {
-            autofocusInput: search === document.activeElement,
-            action: searchForm.getAttribute("action"),
-            searchAccessKey: search.getAttribute("accessKey"),
-            searchTitle: search.getAttribute("title"),
-            searchPlaceholder: search.getAttribute("placeholder"),
-            searchQuery: search.value,
-          },
-          // Pass additional config from server.
-          config
-        ),
-      });
-    },
-  });
+  Vue.createMwApp(
+    App,
+    $.extend(
+      {
+        autofocusInput: search === document.activeElement,
+        action: searchForm.getAttribute("action"),
+        searchAccessKey: search.getAttribute("accessKey"),
+        searchTitle: search.getAttribute("title"),
+        searchPlaceholder: search.getAttribute("placeholder"),
+        searchQuery: search.value,
+      },
+      // Pass additional config from server.
+      config
+    )
+  ).mount(searchForm.parentNode);
 }
 /**
  * @param {Document} document
