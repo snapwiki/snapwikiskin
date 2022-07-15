@@ -8,17 +8,21 @@ const Vue = require("vue").default || require("vue"),
  * @return {void}
  */
 function initApp(searchForm, search) {
-  Vue.createMwapp(App, $.extend(
-          {
-            autofocusInput: search === document.activeElement,
-            action: searchForm.getAttribute("action"),
-            searchAccessKey: search.getAttribute("accessKey"),
-            searchTitle: search.getAttribute("title"),
-            searchPlaceholder: search.getAttribute("placeholder"),
-            searchQuery: search.value,
-          },
-          // Pass additional config from server.
-          config)).mount(searchForm.parentNode);
+  Vue.createMwApp(
+    App,
+    $.extend(
+      {
+        autofocusInput: search === document.activeElement,
+        action: searchForm.getAttribute("action"),
+        searchAccessKey: search.getAttribute("accessKey"),
+        searchTitle: search.getAttribute("title"),
+        searchPlaceholder: search.getAttribute("placeholder"),
+        searchQuery: search.value,
+      },
+      // Pass additional config from server.
+      config
+    )
+  ).mount(searchForm.parentNode);
 }
 /**
  * @param {Document} document
