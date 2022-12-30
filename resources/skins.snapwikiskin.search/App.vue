@@ -95,9 +95,7 @@ module.exports = {
     },
   },
   data: function () {
-    return {
-      
-    };
+    return {};
   },
   methods: {
     /**
