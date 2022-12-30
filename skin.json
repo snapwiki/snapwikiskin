@@ -56,7 +56,7 @@
   },
   "ResourceModules": {
     "skins.snapwikiskin.search": {
-      "dependencies": ["mediawiki.Uri", "wvui-search"],
+      "dependencies": ["mediawiki.Uri", "@wikimedia/codex-search"],
       "es6": true,
       "packageFiles": [
         "resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",

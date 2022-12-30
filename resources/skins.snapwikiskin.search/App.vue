@@ -1,5 +1,5 @@
 <template>
-  <wvui-typeahead-search
+  <cdx-typeahead-search
     id="searchform"
     ref="searchForm"
     :client="getClient"
@@ -18,26 +18,26 @@
     :show-description="showDescription"
   >
     <input type="hidden" name="title" value="Special:Search" />
-  </wvui-typeahead-search>
+  </cdx-typeahead-search>
 </template>
 
 <script>
 /* global SubmitEvent */
-const wvui = require("wvui-search");
+const codex = require("@wikimedia/codex-search");
 module.exports = {
   name: "App",
-  components: wvui,
+  components: codex,
   mounted: function () {
-    // access the element associated with the wvui-typeahead-search component
+    // access the element associated with the cdx-typeahead-search component
     // eslint-disable-next-line no-jquery/variable-pattern
-    var wvuiSearchForm = this.$refs.searchForm.$el;
+    var SearchForm = this.$refs.searchForm.$el;
     if (this.autofocusInput) {
-      // TODO: The wvui-typeahead-search component accepts an id prop but does not
+      // TODO: The cdx-typeahead-search component accepts an id prop but does not
       // display that value as an HTML attribute on the form element.
-      wvuiSearchForm.querySelector("form").setAttribute("id", "searchform");
-      // TODO: The wvui-typeahead-search component does not accept an autofocus parameter
+      SearchForm.querySelector("form").setAttribute("id", "searchform");
+      // TODO: The cdx-typeahead-search component does not accept an autofocus parameter
       // or directive. This can be removed when its does.
-      wvuiSearchForm.querySelector("input").focus();
+      SearchForm.querySelector("input").focus();
     }
   },
   computed: {
@@ -96,9 +96,7 @@ module.exports = {
   },
   data: function () {
     return {
-      // -1 here is the default "active suggestion index" defined in the
-      // `wvui-typeahead-search` component (see
-      // https://gerrit.wikimedia.org/r/plugins/gitiles/wvui/+/c7af5d6d091ffb3beb4fd2723fdf50dc6bb2789b/src/components/typeahead-search/TypeaheadSearch.vue#167).
+      
     };
   },
   methods: {
