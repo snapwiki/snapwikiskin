@@ -8,7 +8,7 @@
   "version": "3.0.0",
   "url": "https://www.mediawiki.org/wiki/Skin:Snap!_Wiki_Skin",
   "requires": {
-    "MediaWiki": ">= 1.38.0"
+    "MediaWiki": ">= 1.39.0"
   },
   "AutoloadNamespaces": {
     "Snapwikiskin\\": "includes/"
