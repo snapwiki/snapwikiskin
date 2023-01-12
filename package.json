@@ -4,12 +4,11 @@
     "test": "prettier --check .",
     "fix": "prettier --write .",
     "lint": "stylelint \"**/**.css\" --fix",
-    "minify": "minhtml --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
+    "minify": "html-minifier-terser --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
   },
   "devDependencies": {
     "browserslist": "^4.21.4",
     "browserslist-config-wikimedia": "^0.4.0",
-    "minhtml": "^1.1.1",
     "prettier": "^2.8.1",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.4",
