@@ -11,7 +11,7 @@
     "browserslist-config-wikimedia": "^0.4.0",
     "prettier": "^2.8.7",
     "stylelint": "^14.16.1",
-    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-wikimedia": "^0.13.1",
     "stylelint-no-unsupported-browser-features": "^6.1.0"
   }
