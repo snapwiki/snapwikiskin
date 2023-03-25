@@ -13,6 +13,6 @@
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-wikimedia": "^0.13.1",
-    "stylelint-no-unsupported-browser-features": "^6.0.1"
+    "stylelint-no-unsupported-browser-features": "^6.1.0"
   }
 }
