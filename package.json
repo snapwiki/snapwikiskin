@@ -4,6 +4,6 @@
     "minify": "minhtml --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
   },
   "devDependencies": {
-    "minhtml": "^0.7.0"
+    "html-minifier-terser": "^7.2.0"
   }
 }
