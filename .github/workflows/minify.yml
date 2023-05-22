@@ -11,8 +11,8 @@ jobs:
         with:
           node-version: 14.x
           
-      - name: Install minhtml
-        run:  npm install --global minhtml
+      - name: Install html-minifier-terser
+        run:  npm install --global html-minifier-terser
       - name: Minify templates
         run:  npm run minify
       - name: Commit changed files
