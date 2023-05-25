@@ -10,7 +10,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 18.x
+          node-version: 20.x
           
       - name: Install minhtml
         run:  npm install --global html-minifier-terser
