@@ -69,7 +69,7 @@
       "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
     },
     "skins.snapwikiskin": {
-      "class": "ResourceLoaderSkinModule",
+      "class": "MediaWiki\\ResourceLoader\\SkinModule",
       "features": {
         "content-parser-output": true,
         "content-media": true,
