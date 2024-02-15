@@ -7,7 +7,7 @@
     "minify": "html-minifier-terser --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
   },
   "devDependencies": {
-    "browserslist": "^4.22.2",
+    "browserslist": "^4.23.0",
     "browserslist-config-wikimedia": "^0.5.1",
     "prettier": "^2.8.8",
     "stylelint": "^15.10.3",
