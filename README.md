@@ -26,7 +26,7 @@ This skin has been developed by GrahamSH and R4356th. We would like to thank Sna
 
 Snap! Wiki Skin - A MediaWiki Skin for the Snap! Wiki
 
-Copyright (C) 2021-2023 GrahamSH and R4356th
+Copyright (C) 2021-2024 GrahamSH and Radman Siddiki
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
