@@ -406,18 +406,6 @@ h4 {
   padding: 0 2em;
 }
 
-.search {
-  background: #fff;
-  transform: translateY(25%);
-  display: inline-block;
-  zoom: 1;
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  text-rendering: auto;
-  width: 25%;
-}
-
 .inner {
   margin: 0 auto;
 }
