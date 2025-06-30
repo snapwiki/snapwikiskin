@@ -12,7 +12,5 @@ updates:
     interval: weekly
     time: "11:00"
   open-pull-requests-limit: 15
-  reviewers:
-  - r4356th
   versioning-strategy: increase
   
