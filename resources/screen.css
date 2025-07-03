@@ -197,13 +197,6 @@ button,
 }
 
 /**
-Remove the inner border and padding in Firefox.
-*/
-::-moz-focus-inner {
-  padding: 0;
-}
-
-/**
 Restore the focus styles unset by the previous rule.
 */
 :-moz-focusring {
@@ -352,6 +345,18 @@ h4 {
 .top-bar .language-select:focus,
 .top-bar .language-select:hover {
   color: #fff;
+}
+
+.search {
+  background: #fff;
+  transform: translateY(25%);
+  display: inline-block;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  width: 25%;
 }
 
 .top-bar .pure-menu-item {
