@@ -1,5 +1,5 @@
 /** @module search */
-const Vue = require("vue").default || require("vue"),
+const Vue = require("vue"),
   App = require("./App.vue"),
   config = require("./config.json");
 /**
