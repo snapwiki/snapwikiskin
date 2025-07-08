@@ -20,8 +20,8 @@ function initApp(searchForm, search) {
         searchQuery: search.value,
       },
       // Pass additional config from server.
-      config
-    )
+      config,
+    ),
   ).mount(searchForm.parentNode);
 }
 /**
