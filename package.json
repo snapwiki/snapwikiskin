@@ -3,8 +3,7 @@
   "scripts": {
     "test": "prettier --check .",
     "fix": "prettier --write .",
-    "lint": "stylelint \"**/**.css\" --fix",
-    "minify": "html-minifier-terser --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
+    "lint": "stylelint \"**/**.css\" --fix"
   },
   "devDependencies": {
     "browserslist": "^4.25.1",
