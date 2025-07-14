@@ -15,7 +15,7 @@ jobs:
       - name: Install minhtml
         run:  npm install --global html-minifier-terser
       - name: Minify templates
-        run:  npm run minify
+        run:  html-minifier-terser --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
