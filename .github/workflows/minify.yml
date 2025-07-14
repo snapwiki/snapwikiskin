@@ -1,7 +1,8 @@
 name: Minify Mustache templates
 on: 
   push:
-
+    paths: 
+      - 'templates/**'
 jobs:
   minify:
     runs-on: ubuntu-latest
