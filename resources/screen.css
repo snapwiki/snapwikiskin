@@ -770,7 +770,6 @@ footer {
   padding: 1em;
   color: #fff;
   margin-top: 3em;
-  flex-shrink: 0;
   font-size: 0.75em;
 }
 
