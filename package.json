@@ -6,7 +6,7 @@
     "lint": "stylelint \"**/**.css\" --fix"
   },
   "devDependencies": {
-    "browserslist": "^4.26.3",
+    "browserslist": "^4.28.0",
     "browserslist-config-wikimedia": "^0.7.0",
     "prettier": "^3.6.2",
     "stylelint": "^16.25.0",
