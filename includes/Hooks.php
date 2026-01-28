@@ -1,7 +1,7 @@
 <?php
-namespace Snapwikiskin;
+namespace MediaWiki\Skins\Snapwikiskin;
 
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\ResourceLoader\Context;
 
 class Hooks {
@@ -10,10 +10,10 @@ class Hooks {
 	 * @param Config $config
 	 * @return $wgSnapwikiskinWvuiSearchOptions
 	 */
-	public static function getSnapwikiskinWvuiSearchResourceLoaderConfig(
+	public static function getSnapwikiskinSearchResourceLoaderConfig(
 		Context $context,
 		Config $config
 	) {
-		return $config->get( 'SnapwikiskinWvuiSearchOptions' );
+		return $config->get( 'SnapwikiskinSearchOptions' );
 	}
 }

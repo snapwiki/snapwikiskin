@@ -1,7 +1,7 @@
 /** @module search */
-const Vue = require("vue").default || require("vue"),
-  App = require("./App.vue"),
-  config = require("./config.json");
+const Vue = require("vue"),
+  config = require("./config.json"),
+  { App } = require("mediawiki.skinning.typeaheadSearch");
 /**
  * @param {HTMLElement} searchForm
  * @param {HTMLInputElement} search
