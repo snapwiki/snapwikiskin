@@ -1,3 +1,23 @@
+/* These styles for lists are here as replacement for the i18n-all-lists-margins feature formerly provided by MediaWiki core. */
+@import 'mediawiki.mixins.less';
+
+ul {
+	margin-top: 0.3em;
+	.margin-inline( 1.6em, 0 );
+	padding: 0.5em 0;
+}
+
+ol {
+	margin-top: 0.3em;
+	.margin-inline( 3.2em, 0 );
+	padding: 0.5em 0;
+  list-style: decimal inside;
+}
+
+dd {
+	.margin-inline( 1.6em, 0 );
+}
+
 /* Begin reset */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -291,15 +311,6 @@ li {
 
 p {
   line-height: 1.2em;
-}
-
-ul,
-ol {
-  padding: 0.5em 0;
-}
-
-ol {
-  list-style: decimal inside;
 }
 
 h2 {
