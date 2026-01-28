@@ -1,2 +1,2 @@
-vendor/**/*.css
-node_modules/**/*.css
+vendor/**
+node_modules/**
