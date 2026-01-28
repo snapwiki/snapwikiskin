@@ -1,7 +1,11 @@
 /** @module search */
 const Vue = require("vue"),
-  App = require("./App.vue"),
-  config = require("./config.json");
+  config = require("./config.json"),
+{
+  App,
+  restSearchClient,
+  urlGenerator
+} = require("mediawiki.skinning.typeaheadSearch");
 /**
  * @param {HTMLElement} searchForm
  * @param {HTMLInputElement} search
