@@ -3,16 +3,14 @@
   "scripts": {
     "test": "prettier --check .",
     "fix": "prettier --write .",
-    "lint": "stylelint \"**/**.css\" --fix",
-    "minify": "html-minifier-terser --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache"
+    "lint": "stylelint \"**/**.css\" --fix"
   },
   "devDependencies": {
-    "browserslist": "^4.23.3",
+    "browserslist": "^4.28.1",
     "browserslist-config-wikimedia": "^0.7.0",
-    "prettier": "^2.8.8",
-    "stylelint": "^15.10.3",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-wikimedia": "^0.17.2",
-    "stylelint-no-unsupported-browser-features": "^7.0.0"
+    "prettier": "^3.8.1",
+    "stylelint": "^17.0.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-no-unsupported-browser-features": "^8.0.5"
   }
 }
