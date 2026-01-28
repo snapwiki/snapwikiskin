@@ -81,7 +81,7 @@
         "normalize": false
       },
       "styles": {
-        "resources/screen.css": {
+        "resources/screen.less": {
           "media": "screen"
         }
       }
