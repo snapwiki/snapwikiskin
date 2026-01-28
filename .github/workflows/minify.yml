@@ -11,12 +11,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 22.x
+          node-version: 24.x
           
       - name: Install minhtml
-        run:  npm install --global html-minifier-terser
+        run:  npm install --global html-minifier-next
       - name: Minify templates
-        run:  html-minifier-terser --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache
+        run:  html-minifier-next --collapse-whitespace --remove-comments --input-dir ./templates --output-dir ./templates/minified --file-ext mustache
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
