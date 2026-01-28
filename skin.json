@@ -1,14 +1,14 @@
 {
   "name": "Snap! Wiki Skin",
   "namemsg": "snapwikiskin",
-  "author": ["R4356th", "GrahamSH"],
+  "author": ["Radman Siddiki", "GrahamSH"],
   "descriptionmsg": "snapwikiskin-desc",
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "url": "https://www.mediawiki.org/wiki/Skin:Snap!_Wiki_Skin",
   "requires": {
-    "MediaWiki": ">= 1.42.0"
+    "MediaWiki": ">= 1.44.0"
   },
   "AutoloadNamespaces": {
     "Snapwikiskin\\": "includes/"
@@ -18,10 +18,7 @@
       "value": "",
       "description": "Override default search API. Can be used with $wgDisableTextSearch and $wgSearchForwardUrl to mimic user experience on production."
     },
-    "SnapwikiskinUseWvuiSearch": {
-      "value": true
-    },
-    "SnapwikiskinWvuiSearchOptions": {
+    "SnapwikiskinSearchOptions": {
       "value": {
         "showThumbnail": false,
         "showDescription": false
@@ -62,7 +59,7 @@
         "resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",
         {
           "name": "resources/skins.snapwikiskin.search/config.json",
-          "callback": "Snapwikiskin\\Hooks::getSnapwikiskinWvuiSearchResourceLoaderConfig"
+          "callback": "Snapwikiskin\\Hooks::getSnapwikiskinSearchResourceLoaderConfig"
         }
       ],
       "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
