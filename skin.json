@@ -56,11 +56,10 @@
   },
   "ResourceModules": {
     "skins.snapwikiskin.search": {
-      "dependencies": ["mediawiki.Uri", "@wikimedia/codex-search"],
+      "dependencies": ["mediawiki.Uri", "mediawiki.skinning.typeaheadSearch"],
       "es6": true,
       "packageFiles": [
         "resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",
-        "resources/skins.snapwikiskin.search/App.vue",
         {
           "name": "resources/skins.snapwikiskin.search/config.json",
           "callback": "Snapwikiskin\\Hooks::getSnapwikiskinWvuiSearchResourceLoaderConfig"
