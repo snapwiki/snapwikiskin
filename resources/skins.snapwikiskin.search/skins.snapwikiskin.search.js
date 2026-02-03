@@ -18,9 +18,9 @@ function initApp(searchForm, search) {
         searchTitle: search.getAttribute("title"),
         searchPlaceholder: search.getAttribute("placeholder"),
         searchQuery: search.value,
-        restClient: restSearchClient(mw.config.get('wgScript'), urlGenerator(mw.config.get('wgScript'))),
-        urlGenerator: urlGenerator(mw.config.get('wgScript')),
-        id: 'typeahead-search'
+        restClient: restSearchClient(mw.config.get("wgScript"), urlGenerator(mw.config.get("wgScript"))),
+        urlGenerator: urlGenerator(mw.config.get("wgScript")),
+        id: "typeahead-search",
       },
       // Pass additional config from server.
       config,
