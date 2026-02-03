@@ -1,5 +1,5 @@
 <?php
-namespace MediaWiki\Skins\Snapwikiskin;
+namespace Snapwikiskin;
 
 use MediaWiki\Config\Config;
 use MediaWiki\ResourceLoader\Context;

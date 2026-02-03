@@ -1,7 +1,10 @@
 {
   "name": "Snap! Wiki Skin",
   "namemsg": "snapwikiskin",
-  "author": ["Radman Siddiki", "GrahamSH"],
+  "author": [
+    "Radman Siddiki",
+    "GrahamSH"
+  ],
   "descriptionmsg": "snapwikiskin-desc",
   "license-name": "GPL-3.0-or-later",
   "type": "skin",
@@ -32,8 +35,12 @@
         {
           "name": "snapwikiskin",
           "templateDirectory": "templates/minified/",
-          "scripts": ["skins.snapwikiskin.search"],
-          "styles": ["skins.snapwikiskin"],
+          "scripts": [
+            "skins.snapwikiskin.search"
+          ],
+          "styles": [
+            "skins.snapwikiskin"
+          ],
           "messages": [
             "navigation-heading",
             "comma-separator",
@@ -49,11 +56,16 @@
     }
   },
   "MessagesDirs": {
-    "snapwikiskin": ["i18n"]
+    "snapwikiskin": [
+      "i18n"
+    ]
   },
   "ResourceModules": {
     "skins.snapwikiskin.search": {
-      "dependencies": ["mediawiki.Uri", "mediawiki.skinning.typeaheadSearch"],
+      "dependencies": [
+        "mediawiki.Uri",
+        "mediawiki.skinning.typeaheadSearch"
+      ],
       "es6": true,
       "packageFiles": [
         "resources/skins.snapwikiskin.search/skins.snapwikiskin.search.js",
@@ -62,7 +74,11 @@
           "callback": "Snapwikiskin\\Hooks::getSnapwikiskinSearchResourceLoaderConfig"
         }
       ],
-      "messages": ["searchbutton", "searchresults", "searchsuggest-containing"]
+      "messages": [
+        "searchbutton",
+        "searchresults",
+        "searchsuggest-containing"
+      ]
     },
     "skins.snapwikiskin": {
       "class": "MediaWiki\\ResourceLoader\\SkinModule",
@@ -85,7 +101,9 @@
       }
     }
   },
-  "RawHtmlMessages": ["snapwikiskin-nav-items"],
+  "RawHtmlMessages": [
+    "snapwikiskin-nav-items"
+  ],
   "ResourceFileModulePaths": {
     "localBasePath": "",
     "remoteSkinPath": "snapwikiskin"
