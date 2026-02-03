@@ -201,7 +201,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  appearance: auto;
+  appearance: button;
 }
 
 /**
@@ -263,7 +263,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  appearance: auto; /* 1 */
+  appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
@@ -524,7 +524,8 @@ h4 {
 }
 
 .pure-menu-scrollable {
-  overflow: hidden scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .pure-menu-scrollable .pure-menu-list {
@@ -537,7 +538,8 @@ h4 {
 
 .pure-menu-horizontal.pure-menu-scrollable {
   white-space: nowrap;
-  overflow: auto hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   padding: 0.5em 0;
 }
