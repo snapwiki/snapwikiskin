@@ -1,7 +1,7 @@
 /** @module search */
 const Vue = require("vue"),
   config = require("./config.json"),
-  { App } = require("mediawiki.skinning.typeaheadSearch");
+  { App, restSearchClient, urlGenerator } = require("mediawiki.skinning.typeaheadSearch");
 /**
  * @param {HTMLElement} searchForm
  * @param {HTMLInputElement} search
@@ -18,6 +18,9 @@ function initApp(searchForm, search) {
         searchTitle: search.getAttribute("title"),
         searchPlaceholder: search.getAttribute("placeholder"),
         searchQuery: search.value,
+        restClient: restSearchClient(mw.config.get('wgScript'), urlGenerator(mw.config.get('wgScript'))),
+        urlGenerator: urlGenerator(mw.config.get('wgScript')),
+        id: 'typeahead-search'
       },
       // Pass additional config from server.
       config,
