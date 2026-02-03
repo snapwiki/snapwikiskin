@@ -944,3 +944,9 @@ textarea {
   font-weight: bold;
   color: #a55858;
 }
+
+#typeahead-search {
+  position: absolute;
+  right: 1px;
+  top: 8.3px;
+}
