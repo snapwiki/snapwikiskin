@@ -538,8 +538,8 @@ h4 {
 
 .pure-menu-horizontal.pure-menu-scrollable {
   white-space: nowrap;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding: 0.5em 0;
 }
