@@ -3,7 +3,7 @@
   "scripts": {
     "test": "prettier --check .",
     "fix": "prettier --write .",
-    "lint": "stylelint \"**/**.css\" --fix"
+    "lint": "stylelint \"**/**.less\" --fix"
   },
   "devDependencies": {
     "browserslist": "^4.28.1",
