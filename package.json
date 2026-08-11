@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "browserslist": "^4.28.4",
-    "browserslist-config-wikimedia": "^0.7.0",
+    "browserslist-config-wikimedia": "^0.9.0",
     "prettier": "^3.8.1",
     "stylelint": "^17.14.1",
     "stylelint-config-standard": "^40.0.0",
